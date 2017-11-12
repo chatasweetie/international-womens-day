@@ -10,43 +10,40 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
       <script src="https://use.fontawesome.com/a0472c1a10.js"></script>
       <link rel="stylesheet" type="text/css" href="/static/css/styling.css">
+      <!-- social media sharing -->
+      <meta property="og:image" content="/logo.png" />
+      <meta property="og:description" content="Coaches share their secrets to success so you can rock 2015. Join us for this inspiring, rejuvenating, motivating look at what secret sauce these coaches use to succeed in their business. This is for coaches of any level that are committed to changing the world. You will be elevated both in your life and your coaching business. Check out the topics below, there is something for everyone." />
+      <meta property="og:url"content="http://www.coachesneedsocial.com/coacheswisdomtelesummit/" />
+      <meta property="og:title" content="Coaches Wisdom Telesummit" />
+
+      <meta property="og:image" content="/logo.jpg">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1024">
+      <meta property="og:image:height" content="1024">
     {% block head %}  {% endblock %}
     </head>
 
 <body>
-<!--     <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <a href="/"> 
-            <img alt="Rideminder Logo" src="/static/img/rideminder-logo.png">
-          </a>
-        </div>
-        <div class="col-xs-6 col-sm-3">
-          <p class="navbar-brand" id="tag">Never miss your stop</p>
-        </div>
-      </div>
-    </div> -->
-    <!-- /.container-fluid -->
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded sticky-top">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand" href="#">
     <img src="static/imgs/assests/iwd-header-logo.png" alt="international women's day logo" class="nav-logo">
   </a>
-  <!-- <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Call for Speakers</a>
+        <a class="nav-link green" target="_blank" href="http://bit.ly/iwd17-speakercall">Call for Speakers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Connect</a>
+        <a class="nav-link" href="#">Volunteer</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Sponsor</a>
       </li>
     </ul>
-  </div> -->
+  </div>
 </nav>
 
   {% block content %}  {% endblock %}

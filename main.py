@@ -19,8 +19,8 @@ app.jinja_env.undefined = "StrictUndefined"
 
 @app.route("/logo.png")
 def favicon():
-    return send_from_directory(os.path.join(app.root_path, "static", "img"),
-                               "favicon.png", mimetype="image/png")
+    return send_from_directory(os.path.join(app.root_path, "static", "imgs", "assests"),
+                               "iwd-square-small.jpg", mimetype="image/png")
 
 @app.route("/")
 def index():
