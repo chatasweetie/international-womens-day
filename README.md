@@ -1,8 +1,8 @@
-# International Women's Day
+# International Women's Day 2018
 
-Backend: [Flask](http://flask.pocoo.org/)
-Frontend: [Bootstrap v4](http://getbootstrap.com/)
-Hosting: [Google App Engine](https://cloud.google.com/appengine/) 
+Backend: [Flask](http://flask.pocoo.org/)    
+Frontend: [Bootstrap v4](http://getbootstrap.com/)    
+Hosting: [Google App Engine](https://cloud.google.com/appengine/)    
 
 
 ## Table of Contents
@@ -34,11 +34,17 @@ international-womens-day/
 ```
 
 ## Create Environment
-1. Create and enter an isolated Python environment using virtualenv:
-    ``virtualenv env ``
-    ``source env/bin/activate``
-2. Install dependencies using pip:
-    ``pip install -t lib -r requirements.txt``
+
+Create and enter an isolated Python environment using virtualenv:
+```
+    virtualenv env 
+    source env/bin/activate
+```
+
+Install dependencies using pip:
+```
+    pip install -t lib -r requirements.txt
+```
 
 
 ## Development
