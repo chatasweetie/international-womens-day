@@ -1,10 +1,10 @@
-"""Transit Alert"""
+"""International Women's Day"""
 import os
 
-from flask import Flask, render_template, request, jsonify, flash
-from flask import redirect
+from flask import Flask, render_template
 from flask_debugtoolbar import DebugToolbarExtension
 from flask import send_from_directory
+from data import speakers_data, talks
 
 
 app = Flask(__name__)
@@ -22,11 +22,34 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, "static", "imgs", "assests"),
                                "iwd-square-small.jpg", mimetype="image/png")
 
+
+@app.route("/schedule.png")
+def schedule_img():
+    return send_from_directory(os.path.join(app.root_path, "static", "imgs", "assests"),
+                               "speakers.jpg", mimetype="image/png")
+
 @app.route("/")
 def index():
     """Homepage"""
 
     return render_template("homepage.html")
+
+
+@app.route("/speakers")
+def speakers():
+    """Speaker Page"""
+    print "*"*80
+    # import pdb; pdb.set_trace()
+    print speakers_data
+
+    return render_template("speakers.html", speaker_data=speakers_data)
+
+
+@app.route("/schedule")
+def schedule():
+    """Schedule Page"""
+
+    return render_template("schedule.html", talks=talks)
 
 
 

@@ -14,7 +14,7 @@ body {
 
 
 .navbar {
-    background-color: rgb(0, 191, 165);
+    background-color: #f5f5f5;
     padding-bottom: 0;
     height: 55px;
 }
@@ -24,12 +24,20 @@ body {
 }
 
 .nav-link {
-    background-color: rgb(0, 191, 165);
+    background-color: #f5f5f5;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+.nav-link:hover, .nav-link:active {
+    background: rgb(28, 233,182);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+} 
 
 .container{
 	height: auto;
@@ -66,25 +74,71 @@ body {
     text-align: center;
 }
 
+.pull-up{
+    margin-top: -15%;
+}
+
 .support-card{
     margin-top: 5%;
     margin-bottom: 1%;
 }
 
-.sponsor-img {
-    max-width: 35%;
+.card-deck {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap; 
+  align-items: stretch;
+}
+.card-deck .card {
+  display: block;
+  flex-basis: 33.3%; /* change this value for each breakpoint*/
 }
 
 
-
-.nav-link:hover, .nav-link:active {
-    background: rgb(28, 233,182);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-} 
+.sponsor-img {
+    max-width: 25%;
+}
 
 button{
     background: rgb(28, 233,182);
+}
+
+.speaker-background{
+    background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/DSC03065.jpg?resize=1570,1047&quality=50");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+}
+
+.speaker-photo{
+    height: auto;
+    width: 100%;
+}
+
+.card{
+    margin: 10%;
+
+}
+
+.rounded-circle {
+    width: 40%;
+    align-self: center;
+}
+
+.page-space{
+    height: 10px;
+    padding: 10%;
+}
+
+h1 {
+    color: black;
+    padding-left: 12%;
+}
+
+.schedule-background{
+    background-image: url("/schedule.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+    background-position-y: center;
 }
