@@ -27,6 +27,37 @@ session_times = [
 # Speaker Infomration                                                          #
 ################################################################################
 
+keynote = Speaker(
+    first_name="River",
+    last_name="Song",
+    )
+keynote.add_social_media(
+    twitter="chatasweetie",
+    linkedin="https://www.linkedin.com/in/jessicaearley/",
+    website="https://chatasweetie.com",
+    youtube="https://www.youtube.com/channel/UCmAIHsNUyAzJ6FQMdU5jdRw",
+    facebook="https://www.facebook.com/jessica.d.earley",
+    google_plus="http://google.com/+JessicaEarleyChatasweetie",
+    )
+keynote.add_professional_information(
+    profession="Sleeper & Fetch",
+    empolyeer="Charley",
+    )
+keynote.add_personal(
+    bio="Jessica Dene Earley-Cha is from Calexico, CA and received her bachelor's in Sociology, Education: Applied Psychology from UCSB. She spent almost a decade working with at-risk youth with mental health challenges in disadvantaged areas. Jessica decided to follow her passion of coding and graduated from a software Boot Camp.  She is full stack developer who enjoys sharing knowledge and support others. Jessica is the co-organizer for Google Developers Group San Francisco, is a Women Techmakers lead, teacher for Girl Develop It, active with  Latinxs in Tech and co-creator of DevelopHerDevelopHim. You'll find her either listening to other's life stories or coding one of her many personal projects.",
+    pronoun="she/her",
+    photo="https://chatasweetie.files.wordpress.com/2015/10/jessica-short.png?w=300&h=317",
+    )
+keynote.add_talk(
+    title="How to be adorable",
+    description="Information about Celery Talk",
+    track_name="Green Room",
+    time="9:00",
+    )
+
+
+################################################################################
+
 jessica = Speaker(
     first_name="Jessica",
     last_name="Earley-Cha",
@@ -83,8 +114,8 @@ jane.add_personal(
 jane.add_talk(
     title="Andriod Things & Stuff",
     description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Yellow Room",
-    time="1:00 - 1:45",
+    track_name="Blue Room",
+    time="12:00 - 1:45",
     )
 
 
@@ -177,8 +208,8 @@ jane1.add_personal(
 jane1.add_talk(
     title="Andriod Things & Stuff 2",
     description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Yellow Room",
-    time="1:00 - 1:45",
+    track_name="Green Room",
+    time="12:00 - 1:45",
     )
 
 
@@ -239,8 +270,8 @@ jessica3.add_personal(
 jessica3.add_talk(
     title="A really long title that goes over the assigned thingy",
     description="Information about Celery Talk 3",
-    track_name="Yellow Room",
-    time="1:00 - 1:45",
+    track_name="Blue Room",
+    time="2:00 - 2:45",
     )
 
 
@@ -404,6 +435,7 @@ james4.add_talk(
 ###############Add Speaker objects to Speakers List#############################
 ################################################################################
 speakers_data = [
+    keynote,
     jessica,
     jane,
     james,
@@ -446,8 +478,8 @@ schedule_color = {}
 
 counter = 0
 for track in track_names:
-    if counter > 4:
-        count -= 4
+    if counter > 3:
+        counter -= 4
     schedule_color[track] = colors[counter]
     counter += 1
 

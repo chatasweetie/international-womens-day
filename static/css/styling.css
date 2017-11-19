@@ -179,3 +179,11 @@ h1 {
 .btn-sm{
     margin-bottom: 1%;
 }
+
+.padding-b{
+    padding-top: 1%;
+}
+
+.schedule-background h1{
+    color:white;
+}

@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<div class="container text-center">
+<div class="container text-center padding-b">
   <div class="row">
     <div class="col schedule-session dark-blue">
       Times
@@ -28,11 +28,11 @@
   </div>
   {% for session_num in range_session_times %}
     <div class="row">
-      <div class="col schedule-session dark-blue">
+      <div class="col-md schedule-session dark-blue ">
         {{ session_times[session_num] }}
       </div>
       {% for track in track_names %}
-        <div class="col schedule-session {{ schedule_color[track] }}">
+        <div class="col-md schedule-session {{ schedule_color[track] }}">
           {% if talks[track][session_num] not in range_session_times %}
             <p class="session-title session">
               {{ talks[track][session_num].title }}
