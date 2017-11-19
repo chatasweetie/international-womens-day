@@ -4,8 +4,7 @@ import os
 from flask import Flask, render_template
 from flask_debugtoolbar import DebugToolbarExtension
 from flask import send_from_directory
-from data import speakers_data, talks
-
+from data import speakers_data, talks, track_names, session_times, missing_data_talks, order_of_sessions, schedule_color
 
 app = Flask(__name__)
 
@@ -42,32 +41,50 @@ def speakers():
     # import pdb; pdb.set_trace()
     print speakers_data
 
-    return render_template("speakers.html", speaker_data=speakers_data)
+    return render_template("speakers.html", 
+                            speaker_data=speakers_data)
 
 
 @app.route("/schedule")
 def schedule():
     """Schedule Page"""
 
-    return render_template("schedule.html", talks=talks)
+    if missing_data_talks:
+        print "*"*80
+        print "The following talks are don't have a track & time:"
+        print missing_data_talks
+        print "*"*80
+
+    range_session_times = range(len(session_times))
+    
+
+
+    return render_template("schedule.html",
+                            talks=talks,
+                            track_names=track_names,
+                            session_times=session_times,
+                            order_of_sessions=order_of_sessions,
+                            range_session_times=range_session_times,
+                            schedule_color=schedule_color,
+                            )
 
 
 
 ############################################################################
 # Error Pages
-@app.errorhandler(404)
-def page_not_found(error):
-    """404 Page Not Found handling"""
+# @app.errorhandler(404)
+# def page_not_found(error):
+#     """404 Page Not Found handling"""
 
-    return render_template('/errors/404.html'), 404
+#     return render_template('/errors/404.html'), 404
 
 
-@app.errorhandler(500)
-def internal_error(error):
-    # db.session.rollback()
-    """500 Error handling """
+# @app.errorhandler(500)
+# def internal_error(error):
+#     # db.session.rollback()
+#     """500 Error handling """
 
-    return render_template('/errors/500.html'), 500
+#     return render_template('/errors/500.html'), 500
 
 
 

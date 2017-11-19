@@ -15,32 +15,67 @@
   </div>
 </div>
 
-<!-- <div class="card-group">
-  <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+<div class="container text-center">
+  <div class="row">
+    <div class="col schedule-session dark-blue">
+      Times
     </div>
+    {% for track_name in track_names %}
+      <div class="col schedule-session {{ schedule_color[track_name] }}">
+        {{ track_name }}
+      </div>
+    {% endfor %}
   </div>
-  <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  {% for session_num in range_session_times %}
+    <div class="row">
+      <div class="col schedule-session dark-blue">
+        {{ session_times[session_num] }}
+      </div>
+      {% for track in track_names %}
+        <div class="col schedule-session {{ schedule_color[track] }}">
+          {% if talks[track][session_num] not in range_session_times %}
+            <p class="session-title session">
+              {{ talks[track][session_num].title }}
+            </p>
+            <p class="session">
+              {{ talks[track][session_num].description|truncate(50) }}
+            </p>
+            <p class="session session-speaker">
+              By: {{ talks[track][session_num].speaker.first_name }} {{ talks[track][session_num].speaker.last_name }}
+            </p>
+
+            <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#{{ talks[track][session_num].speaker.last_name }}">
+                More info
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="{{ talks[track][session_num].speaker.last_name }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLongTitle">{{ talks[track][session_num].title }}</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body center-text">
+                      {{ talks[track][session_num].description }}
+                    </div>
+                    <div class="card-footer">
+                      <small>At {{ talks[track][session_num].slot['time'] }} in {{ talks[track][session_num].slot['track_name'] }}
+                      </small>
+                    </div>
+                    <!-- <img class="card-img-bottom rounded-circle" src= "{{ talks[track][session_num].speaker.personal_info["photo"] }}" alt="{{ talks[track][session_num].speaker.first_name }} {{ talks[track][session_num].speaker.last_name }}"> -->
+                    </div>
+                  </div>
+                </div>
+          {% endif %}
+        </div>
+      {% endfor %}
     </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div> -->
+  {% endfor %}
+</div>
 
 
 
