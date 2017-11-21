@@ -26,7 +26,12 @@
           <img class="card-img-top speaker-photo" src= "{{ speaker.personal_info["photo"] }}" alt="{{ speaker.first_name }} {{ speaker.last_name }}">
           <div class="card-block">
             <h4 class="card-title">{{ speaker.first_name }} {{ speaker.last_name }}</h4>
-            <p class="card-text">{{ speaker.professional_info["profession"] }} {{ speaker.professional_info["empolyeer"] }}</p>
+            <p class="card-text session">
+              {{ speaker.professional_info["profession"] }} 
+            </p>
+            <p class="card-text session">
+              {{ speaker.professional_info["empolyeer"] }}
+            </p>
 
               <!-- Button trigger modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{ speaker.last_name }}">
