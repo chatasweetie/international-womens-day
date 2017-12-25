@@ -16,18 +16,18 @@
 </div>
 
 <div class="container text-center padding-b">
-  <div class="row">
-    <div class="col schedule-session dark-blue">
+  <div class="row row-padding">
+    <div class="col schedule-session dark-blue schedule-title">
       Times
     </div>
     {% for track_name in track_names %}
-      <div class="col schedule-session {{ schedule_color[track_name] }}">
+      <div class="col schedule-session {{ schedule_color[track_name] }} schedule-title">
         {{ track_name }}
       </div>
     {% endfor %}
   </div>
   {% for session_num in range_session_times %}
-    <div class="row">
+    <div class="row row-padding">
       <div class="col-md schedule-session dark-blue ">
         {{ session_times[session_num] }}
       </div>
@@ -38,7 +38,7 @@
               {{ talks[track][session_num].title }}
             </p>
             <p class="session">
-              {{ talks[track][session_num].description|truncate(50) }}
+              {{ talks[track][session_num].description|truncate(70) }}
             </p>
             <p class="session session-speaker">
               By: {{ talks[track][session_num].speaker.first_name }} {{ talks[track][session_num].speaker.last_name }}
@@ -48,19 +48,29 @@
               <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#{{ talks[track][session_num].speaker.last_name }}">
                 More info
               </button>
+              <a class="pull-right" target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&text={{ talks[track][session_num].title }}&details={{ talks[track][session_num].description }}%0D%0ABy: {{ talks[track][session_num].speaker.first_name }} {{ talks[track][session_num].speaker.last_name }}%0D%0A{{ talks[track][session_num].speaker.personal_info['bio'] }}&location={{ talks[track][session_num].slot['track_name'] }}&dates={{ talks[track][session_num].slot['calendar_datetime'] }}"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a>
 
+            
               <!-- Modal -->
               <div class="modal fade" id="{{ talks[track][session_num].speaker.last_name }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalLongTitle">{{ talks[track][session_num].title }}</h4>
+                      <h4 class="modal-title" id="exampleModalLongTitle">
+                        {{ talks[track][session_num].title }}</h4>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="modal-body center-text">
                       {{ talks[track][session_num].description }}
+                    </div>
+                    <div class="modal-body center-text">
+                      By: {{ talks[track][session_num].speaker.first_name }} {{ talks[track][session_num].speaker.last_name }} <br>
+                      
+                      {% if talks[track][session_num].speaker.professional_info['profession'] %}
+                        {{ talks[track][session_num].speaker.professional_info['profession'] }} at {{ talks[track][session_num].speaker.professional_info['empolyeer'] }}
+                      {% endif %}
                     </div>
                     <div class="card-footer">
                       <small>At {{ talks[track][session_num].slot['time'] }} in {{ talks[track][session_num].slot['track_name'] }}

@@ -1,7 +1,7 @@
 """International Women's Day"""
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, send_file
 from flask_debugtoolbar import DebugToolbarExtension
 from flask import send_from_directory
 from data import speakers_data, talks, track_names, session_times, missing_data_talks, order_of_sessions, schedule_color
@@ -56,8 +56,6 @@ def schedule():
         print "*"*80
 
     range_session_times = range(len(session_times))
-    
-
 
     return render_template("schedule.html",
                             talks=talks,
@@ -68,7 +66,19 @@ def schedule():
                             schedule_color=schedule_color,
                             )
 
+@app.route("/community")
+def community():
+    """Community Guidelines"""
 
+    return render_template("community_guidelines.html")
+
+
+
+@app.route('/show/sponsorship-pdf/')
+def show_static_pdf():
+    # with open('static/imgs/assests/iwd-sponsorship-letter-2017.pdf', 'rb') as static_file:
+    #     return send_file(static_file, attachment_filename='file.pdf')
+    return send_file('static/imgs/assests/iwd-sponsorship-letter-2018.pdf')
 
 ############################################################################
 # Error Pages
