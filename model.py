@@ -2,13 +2,12 @@
 import datetime
 
 
-class Speaker(object):
+class Person(object):
     """This is a human person"""
 
     def __init__(self, first_name, last_name):
         self.first_name = first_name
         self.last_name = last_name
-        self.talk = None
 
     def add_social_media(self, twitter=None, linkedin=None, website=None,
                             youtube=None, facebook=None, google_plus=None):
@@ -34,6 +33,24 @@ class Speaker(object):
                     "photo": photo,       
                     }
 
+    def __repr__(self):
+        """A prettier way of printing our node"""
+
+        return """<Person | {} {}>""".format(
+                                self.first_name,
+                                self.last_name,
+                                )
+
+
+class Speaker(Person):
+    """This is a Speaker"""
+
+    def __init__(self, first_name, last_name):
+        super(Speaker, self).__init__(first_name, last_name)
+        self.first_name = first_name
+        self.last_name = last_name
+        self.talk = None
+
     def add_talk(self, title=None, description=None, track_name=None, time=None, date=None):
         _talk = Talk(title=title, description=description, track_name=track_name, time=time, date=date, speaker=self)
         self.talk = _talk
@@ -46,6 +63,29 @@ class Speaker(object):
                                 self.last_name,
                                 )
 
+
+class Organizer(Person):
+    """This is a Organizer"""
+
+    def __init__(self, first_name, last_name):
+        super(Organizer, self).__init__(first_name, last_name)
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def add_committee_info(self, roles=None, gdg_name=None, gdg_role=None):
+        self.committee_info = {
+                    "roles": roles,
+                    "gdg_name": gdg_name,
+                    "gdg_role": gdg_role,
+                    }
+
+    def __repr__(self):
+        """A prettier way of printing our node"""
+
+        return """<Organizer | {} {}>""".format(
+                                self.first_name,
+                                self.last_name,
+                                )
 
 class Talk(object):
     """This is a Speaker's Session"""

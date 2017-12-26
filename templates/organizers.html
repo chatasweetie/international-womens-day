@@ -6,7 +6,7 @@
 {% block content %}
 
 <div>
-  <div class="row">
+  <div class="row center">
     <h1 class="center">
       Organizers
     </h1>
@@ -18,17 +18,32 @@
       <div class="card-deck">
 
       {% for speaker in organizers_data %}
-      <div class="col-md-4 col-lg-3">
-        <div class="card card-inverse card-info mb-3 text-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card center-text {{ speaker.color}}">
           <img class="card-img-top speaker-photo" src= "{{ speaker.personal_info["photo"] }}" alt="{{ speaker.first_name }} {{ speaker.last_name }}">
           <div class="card-block">
             <h4 class="card-title">{{ speaker.first_name }} {{ speaker.last_name }}</h4>
             <p class="card-text session">
-              {{ speaker.professional_info["profession"] }} 
+              {{ speaker.committee_info["gdg_role"] }} 
             </p>
             <p class="card-text session">
-              {{ speaker.professional_info["empolyeer"] }}
+              {{ speaker.committee_info["gdg_name"] }}
             </p>
+            <p class="card-text session">
+              {% if speaker.committee_info["roles"] %}
+                <ul>
+                  {% for item in speaker.committee_info["roles"] %}
+                  <li>
+                    {{ item }}
+                  </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </p>
+
+
+
+
 
               <!-- Button trigger modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{ speaker.last_name }}">
@@ -46,6 +61,11 @@
                       </button>
                     </div>
                     <img class="card-img-top rounded-circle" src= "{{ speaker.personal_info["photo"] }}" alt="{{ speaker.first_name }} {{ speaker.last_name }}">
+
+            <div class="modal-body center-text">
+              {{ speaker.professional_info["profession"] }} </br>
+              {{ speaker.professional_info["empolyeer"] }}
+            </div>
                     <div class="modal-body center-text">
                       {{ speaker.personal_info["bio"] }}
                     </div>
