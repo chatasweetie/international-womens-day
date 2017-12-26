@@ -1,4 +1,5 @@
 """Speaker & Talk Classes"""
+import datetime
 
 
 class Speaker(object):
@@ -33,8 +34,8 @@ class Speaker(object):
                     "photo": photo,       
                     }
 
-    def add_talk(self, title=None, description=None, track_name=None, time=None):
-        _talk = Talk(title=title, description=description, track_name=track_name, time=time, speaker=self)
+    def add_talk(self, title=None, description=None, track_name=None, time=None, date=None):
+        _talk = Talk(title=title, description=description, track_name=track_name, time=time, date=date, speaker=self)
         self.talk = _talk
 
     def __repr__(self):
@@ -49,12 +50,21 @@ class Speaker(object):
 class Talk(object):
     """This is a Speaker's Session"""
 
-    def __init__(self, title, description, track_name=None, time=None, speaker=None):
+    def __init__(self, title, description, track_name=None, time=None, speaker=None, date=None, session_length=None):
         self.title = title.capitalize()
         self.description = description
+
+        if date is not None and time is not None:
+            start = datetime.datetime.strptime("{} {}".format(date, time), '%m/%d/%Y %I:%M%p')
+            end = start + datetime.timedelta(minutes=45)
+            calendar_datetime = create_calendar_datetime(start, end)
+
+        else: 
+            calendar_datetime = None
         self.slot = {
                     "track_name": track_name,
                     "time": time,
+                    "calendar_datetime": calendar_datetime
                     }
         self.speaker = speaker
 
@@ -64,6 +74,43 @@ class Talk(object):
         return """<Talk | {}>""".format(
                                 self.title,
                                 )
+
+
+def create_calendar_datetime(start, end):
+    """Returns RFC 3339 format for Google calendar
+
+        >>> date = "03/17/2018"
+        >>> time = "1:00pm"
+        >>> start = datetime.datetime.strptime("{} {}".format(date, time), '%m/%d/%Y %I:%M%p')
+        >>> end = start + datetime.timedelta(minutes=45)
+        >>> print create_calendar_datetime(start, end)
+        20180317T130000%2F20180317T134500
+
+    """
+    start = start.isoformat('T')
+    # removing the '-' and ':'
+    part_1 = start[:11].split('-')
+    part_2 = start[11:].split(':')
+    #bring data back together
+    part_1 = "".join(part_1)
+    part_2 = "".join(part_2)
+    #join the two pieces together
+    start = part_1 + part_2
+
+    end = end.isoformat('T')
+    # removing the '-' and ':'
+    part_1 = end[:11].split('-')
+    part_2 = end[11:].split(':')
+    #bring data back together
+    part_1 = "".join(part_1)
+    part_2 = "".join(part_2)
+    #join the two pieces together
+    end = part_1 + part_2
+
+    # bring the start & end together!
+    calendar_datetime = "{}%2F{}".format(start, end)
+
+    return calendar_datetime
 
 ###################### Speaker Example ##########################
 

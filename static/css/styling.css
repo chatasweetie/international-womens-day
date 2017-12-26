@@ -1,16 +1,10 @@
+/* Base */
 body {
     font-family: "Open Sans Light", serif;
     color: rgb(102,102,102);
     background-color: #DBF3FD;
-
 }
 
-.background-img {
-    background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/HNCK3940.jpg?w=2210&quality=50");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 5%
-}
 
 .navbar {
     background-color: #f5f5f5;
@@ -39,8 +33,7 @@ body {
 } 
 
 .container{
-	height: auto;
-	
+	height: auto;	
 }
 
 .footer {
@@ -54,6 +47,14 @@ body {
 .row {
     margin-right: 0;
     margin-left: 0;
+}
+
+/* Homepage */
+.background-img {
+    background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/HNCK3940.jpg?w=2210&quality=50");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 5%
 }
 
 .img-transparent {
@@ -77,6 +78,7 @@ body {
     margin-top: -15%;
 }
 
+/* Speaker CSS */
 .support-card{
     margin-top: 5%;
     margin-bottom: 1%;
@@ -134,6 +136,7 @@ h1 {
     padding-left: 12%;
 }
 
+/* Scheudle CSS */
 .schedule-background{
     background-image: url("/schedule.png");
     background-size: 100%;
@@ -144,9 +147,11 @@ h1 {
 
 .schedule-session{
     border-radius: 20px;
-    border: .75px solid #DBF3FD;
+    border: 1.75px solid #DBF3FD;
     color:black;
+    font-size: 1.05rem;
 }
+
 
 .dark-blue {
     background-color: rgb(66,133,244);
@@ -178,12 +183,34 @@ h1 {
 
 .btn-sm{
     margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .padding-b{
     padding-top: 1%;
 }
 
+.row-padding{
+    margin-bottom: 0.75%;
+}
+
+.schedule-title{
+    font-weight: bold;
+}
+
 .schedule-background h1{
     color:white;
+}
+
+.fa-calendar-plus-o:before{
+    color: rgb(102,102,102);
+}
+
+/* Community */
+
+.background-img-community {
+    background-image: url("https://images.pexels.com/photos/672916/pexels-photo-672916.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 5%
 }
