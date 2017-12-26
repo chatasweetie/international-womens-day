@@ -5,6 +5,7 @@ from flask import Flask, render_template, send_file
 from flask_debugtoolbar import DebugToolbarExtension
 from flask import send_from_directory
 from data import speakers_data, talks, track_names, session_times, missing_data_talks, order_of_sessions, schedule_color
+from organizerdata import organizers_data
 
 app = Flask(__name__)
 
@@ -79,6 +80,14 @@ def show_static_pdf():
     # with open('static/imgs/assests/iwd-sponsorship-letter-2017.pdf', 'rb') as static_file:
     #     return send_file(static_file, attachment_filename='file.pdf')
     return send_file('static/imgs/assests/iwd-sponsorship-letter-2018.pdf')
+
+
+@app.route("/organizers")
+def organizers():
+    """Organizer's Page"""
+
+    return render_template("organizers.html",
+                            organizers_data=organizers_data)
 
 ############################################################################
 # Error Pages

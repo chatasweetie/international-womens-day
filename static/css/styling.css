@@ -214,3 +214,9 @@ h1 {
     background-repeat: no-repeat;
     padding-bottom: 5%
 }
+
+/* Organizers */
+
+.modal-content{
+    color: rgb(102,102,102);
+}
