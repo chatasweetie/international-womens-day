@@ -44,7 +44,7 @@ james = Organizer(
     last_name="Cha-Earley",
     )
 james.add_social_media(
-    twitter=None,
+    twitter="https://twitter.com/theJamesCha",
     linkedin="https://www.linkedin.com/in/jamesjcha/",
     website=None,
     youtube=None,
@@ -52,7 +52,7 @@ james.add_social_media(
     google_plus=None,
     )
 james.add_professional_information(
-    profession="Software Developer",
+    profession="Developer Program Manager",
     empolyeer="Clover",
     )
 james.add_personal(

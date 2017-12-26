@@ -24,12 +24,16 @@
           <div class="card-block">
             <h4 class="card-title">{{ speaker.first_name }} {{ speaker.last_name }}</h4>
             <p class="card-text session">
+              {{ speaker.professional_info["profession"] }} </br>
+              {{ speaker.professional_info["empolyeer"] }}
+            </p>
+            <p class="card-text session font-weight-bold">
               {{ speaker.committee_info["gdg_role"] }} 
             </p>
-            <p class="card-text session">
+            <p class="card-text session font-weight-bold">
               {{ speaker.committee_info["gdg_name"] }}
             </p>
-            <p class="card-text session">
+            <!-- <p class="card-text session">
               {% if speaker.committee_info["roles"] %}
                 <ul>
                   {% for item in speaker.committee_info["roles"] %}
@@ -39,67 +43,33 @@
                   {% endfor %}
                 </ul>
               {% endif %}
+            </p> -->
+            <p class="card-text session">
+              {% if speaker.social_media.get("twitter") %}
+                <a href="https://twitter.com/{{ speaker.social_media.get("twitter") }}">
+                  <i class="fa fa-twitter"></i></a>&nbsp;
+              {% endif %}
+
+              {% if speaker.social_media.get("linkedin") %}
+                <a href="{{ speaker.social_media.get("linkedin") }}">
+                  <i class="fa fa-linkedin"></i></a>&nbsp;
+              {% endif %}
+
+              {% if speaker.social_media.get("facebook") %}
+                <a href="{{ speaker.social_media.get("facebook") }}">
+                  <i class="fa fa-facebook"></i></a>&nbsp;
+              {% endif %}
+
+              {% if speaker.social_media.get("google_plus") %}
+                <a href="{{ speaker.social_media.get("google_plus") }}">
+                  <i class="fa fa-google-plus"></i></a>&nbsp;
+              {% endif %}
+
+              {% if speaker.social_media.get("website") %}
+                <a href="{{ speaker.social_media.get("website") }}">
+                  <i class="fa fa-laptop"></i></a>&nbsp;
+              {% endif %}
             </p>
-
-
-
-
-
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{ speaker.last_name }}">
-                More info
-              </button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="{{ speaker.last_name }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">{{ speaker.first_name }} {{ speaker.last_name }}</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <img class="card-img-top rounded-circle" src= "{{ speaker.personal_info["photo"] }}" alt="{{ speaker.first_name }} {{ speaker.last_name }}">
-
-            <div class="modal-body center-text">
-              {{ speaker.professional_info["profession"] }} </br>
-              {{ speaker.professional_info["empolyeer"] }}
-            </div>
-                    <div class="modal-body center-text">
-                      {{ speaker.personal_info["bio"] }}
-                    </div>
-                    <div class="modal-footer center">
-                      {% if speaker.social_media.get("twitter") %}
-                        <a href="https://twitter.com/{{ speaker.social_media.get("twitter") }}">
-                          <i class="fa fa-twitter"></i></a>&nbsp;
-                      {% endif %}
-
-                      {% if speaker.social_media.get("linkedin") %}
-                        <a href="{{ speaker.social_media.get("linkedin") }}">
-                          <i class="fa fa-linkedin"></i></a>&nbsp;
-                      {% endif %}
-
-                      {% if speaker.social_media.get("facebook") %}
-                        <a href="{{ speaker.social_media.get("facebook") }}">
-                          <i class="fa fa-facebook"></i></a>&nbsp;
-                      {% endif %}
-
-                      {% if speaker.social_media.get("google_plus") %}
-                        <a href="{{ speaker.social_media.get("google_plus") }}">
-                          <i class="fa fa-google-plus"></i></a>&nbsp;
-                      {% endif %}
-
-                      {% if speaker.social_media.get("website") %}
-                        <a href="{{ speaker.social_media.get("website") }}">
-                          <i class="fa fa-laptop"></i></a>&nbsp;
-                      {% endif %}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
           </div>
         </div>
       </div>
