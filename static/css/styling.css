@@ -96,10 +96,6 @@ body {
   flex-basis: 33.3%; /* change this value for each breakpoint*/
 }
 
-.sponsor-img {
-    max-width: 25%;
-}
-
 button{
     background: rgb(28, 233,182);
 }
