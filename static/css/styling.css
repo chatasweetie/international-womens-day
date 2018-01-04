@@ -49,9 +49,16 @@ body {
     margin-left: 0;
 }
 
+.partner-sponsor{
+    height: 75px;
+    width:auto;
+}
+
+
 /* Homepage */
 .background-img {
-    background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/HNCK3940.jpg?w=2210&quality=50");
+    /*background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/HNCK3940.jpg?w=2210&quality=50");*/
+    background-image: url("../imgs/assests/vertical-speaker.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     padding-bottom: 5%
@@ -74,8 +81,37 @@ body {
     text-align: center;
 }
 
-.pull-up{
-    margin-top: -15%;
+
+#title {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    width: 100%;
+    color: rgb(28,233,182)
+}
+
+h1 {
+    color: black;
+}
+
+.blue-banner{
+    background: rgb(79,195,247);
+    margin:0;
+    padding:1%;
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .homepage-card {
+        width: 70%;
+        margin-left: 15%;
+        opacity: .8;
+    }
+}
+#map { 
+    height: 100%; 
 }
 
 /* Speaker CSS */
@@ -96,6 +132,7 @@ body {
   flex-basis: 33.3%; /* change this value for each breakpoint*/
 }
 
+
 button{
     background: rgb(28, 233,182);
 }
@@ -112,11 +149,6 @@ button{
     width: 100%;
 }
 
-.card{
-    margin: 10%;
-
-}
-
 .rounded-circle {
     width: 40%;
     align-self: center;
@@ -127,10 +159,10 @@ button{
     padding: 10%;
 }
 
-h1 {
-    color: black;
+.subheadings {
     padding-left: 12%;
 }
+
 
 /* Scheudle CSS */
 .schedule-background{
