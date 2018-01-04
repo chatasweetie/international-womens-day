@@ -39,10 +39,9 @@ def index():
 def speakers():
     """Speaker Page"""
     print "*"*80
-    # import pdb; pdb.set_trace()
     print speakers_data
 
-    return render_template("speakers.html", 
+    return render_template("speakers.html",
                             speaker_data=speakers_data)
 
 
@@ -77,8 +76,7 @@ def community():
 
 @app.route('/show/sponsorship-pdf/')
 def show_static_pdf():
-    # with open('static/imgs/assests/iwd-sponsorship-letter-2017.pdf', 'rb') as static_file:
-    #     return send_file(static_file, attachment_filename='file.pdf')
+
     return send_file('static/imgs/assests/iwd-sponsorship-letter-2018.pdf')
 
 

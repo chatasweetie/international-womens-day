@@ -57,8 +57,7 @@ body {
 
 /* Homepage */
 .background-img {
-    /*background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/HNCK3940.jpg?w=2210&quality=50");*/
-    background-image: url("../imgs/assests/vertical-speaker.jpg");
+    background-image: url("https://github.com/chatasweetie/international-womens-day/blob/master/static/imgs/assests/vertical-speaker.jpg?raw=true");
     background-size: 100%;
     background-repeat: no-repeat;
     padding-bottom: 5%
