@@ -35,7 +35,6 @@ jessica.add_committee_info(
     )
 
 
-
 ################################################################################
 
 
@@ -67,11 +66,42 @@ james.add_committee_info(
     )
 
 ################################################################################
+
+
+rubi = Organizer(
+    first_name="Rubi",
+    last_name="Martinez",
+    )
+rubi.add_social_media(
+    twitter=None,
+    linkedin=None,
+    website=None,
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+rubi.add_professional_information(
+    profession="Trust and Safety",
+    empolyeer="Patreon",
+    )
+rubi.add_personal(
+    bio=None,
+    pronoun=None,
+    photo=None,
+    )
+rubi.add_committee_info(
+    roles=None,
+    gdg_name="",
+    gdg_role="",
+    )
+
+################################################################################
 #         Add Organizer objects to Speakers List                               #
 ################################################################################
 organizers_data = [
     jessica,
     james,
+    rubi,
     ]
 
 ################################################################################

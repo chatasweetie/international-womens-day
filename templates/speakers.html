@@ -9,7 +9,7 @@
 <div class="speaker-background">
   <div class="row">
     <div class="container page-space ">
-      <h1 class="center">
+      <h1 class="center subheadings">
         Speakers
       </h1>
     </div>
@@ -21,7 +21,7 @@
       <div class="card-deck">
 
       {% for speaker in speaker_data %}
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 speaker-pad">
         <div class="card center-text">
           <img class="card-img-top speaker-photo" src= "{{ speaker.personal_info["photo"] }}" alt="{{ speaker.first_name }} {{ speaker.last_name }}">
           <div class="card-block">

@@ -61,7 +61,7 @@ keynote.add_professional_information(
 keynote.add_personal(
     bio="Jessica Dene Earley-Cha is from Calexico, CA and received her bachelor's in Sociology, Education: Applied Psychology from UCSB. She spent almost a decade working with at-risk youth with mental health challenges in disadvantaged areas. Jessica decided to follow her passion of coding and graduated from a software Boot Camp.  She is full stack developer who enjoys sharing knowledge and support others. Jessica is the co-organizer for Google Developers Group San Francisco, is a Women Techmakers lead, teacher for Girl Develop It, active with  Latinxs in Tech and co-creator of DevelopHerDevelopHim. You'll find her either listening to other's life stories or coding one of her many personal projects.",
     pronoun="she/her",
-    photo="https://chatasweetie.files.wordpress.com/2015/10/jessica-short.png?w=300&h=317",
+    photo=None,
     )
 keynote.add_talk(
     title="How to be adorable",
@@ -189,7 +189,7 @@ jessica1.add_professional_information(
 jessica1.add_personal(
     bio="Jessica Dene Earley-Cha is from Calexico, CA and received her bachelor's in Sociology, Education: Applied Psychology from UCSB. She spent almost a decade working with at-risk youth with mental health challenges in disadvantaged areas. Jessica decided to follow her passion of coding and graduated from a software Boot Camp.  She is full stack developer who enjoys sharing knowledge and support others. Jessica is the co-organizer for Google Developers Group San Francisco, is a Women Techmakers lead, teacher for Girl Develop It, active with  Latinxs in Tech and co-creator of DevelopHerDevelopHim. You'll find her either listening to other's life stories or coding one of her many personal projects.",
     pronoun="she/her",
-    photo="https://chatasweetie.files.wordpress.com/2015/10/jessica-short.png?w=300&h=317",
+    photo=None,
     )
 jessica1.add_talk(
     title="Celery 2",

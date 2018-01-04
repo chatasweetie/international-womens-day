@@ -1,5 +1,6 @@
 """Speaker & Talk Classes"""
 import datetime
+import random
 
 
 class Person(object):
@@ -27,6 +28,8 @@ class Person(object):
                     }
 
     def add_personal(self, bio=None, pronoun=None, photo=None):
+        if not photo:
+            photo = "/static/imgs/speakers/{}.png".format(random.randint(0, 7))
         self.personal_info = {
                     "bio": bio,
                     "pronoun": pronoun,
