@@ -189,6 +189,11 @@ button{
     border: 1.75px solid #DBF3FD;
     color:black;
     font-size: 1.05rem;
+    /*padding-bottom: .5%;*/
+}
+
+.grey-banner{
+    background-color: #f5f5f5;
 }
 
 .dark-blue {

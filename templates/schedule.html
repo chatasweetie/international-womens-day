@@ -15,6 +15,21 @@
   </div>
 </div>
 
+<div class="container-fuild grey-banner text-darker">
+  <div class="row">
+    <div class="col center-text offset-md-1">
+      <i class="fa fa-laptop" aria-hidden="true"></i> Technology Session
+    </div>
+    <div class="col center-text">
+      <i class="fa fa-briefcase" aria-hidden="true"></i> Professional Session
+    </div>
+    <div class="col center-text">
+      <i class="fa fa-user" aria-hidden="true"></i></i> Personal Session
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
 <div class="container text-center padding-b">
   <div class="row row-padding">
     <div class="col schedule-session dark-blue schedule-title">
@@ -36,6 +51,16 @@
           {% if talks[track][session_num] not in range_session_times %}
             <p class="session-title session">
               {{ talks[track][session_num].title }}
+            <!-- Category Icons -->
+            {% if talks[track][session_num].category  == "Technology" %}
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+            {% endif %}
+            {% if talks[track][session_num].category  == "Professional" %}
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+            {% endif %}
+            {% if talks[track][session_num].category  == "Personal" %}
+              <i class="fa fa-user" aria-hidden="true"></i>
+            {% endif %}
             </p>
             <p class="session">
               {{ talks[track][session_num].description|truncate(70) }}
@@ -91,8 +116,13 @@
   {% endfor %}
 </div>
 
-
-
+<div class="row">
+    <div class="col">
+      <h6 class="center-text">
+        Talks & Schedule are subjected to change
+      </h6>
+    </div>
+  </div>
 
 
 

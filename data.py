@@ -81,6 +81,7 @@ jessica.add_talk(
     track_name="Green Area",
     time="10:00am",
     date=date,
+    category="Technology",
     )
 
 
@@ -113,6 +114,7 @@ jane.add_talk(
     track_name="Blue Area",
     time="11:00am",
     date=date,
+    category="Professional",
     )
 
 
@@ -146,6 +148,7 @@ james.add_talk(
     track_name=None,
     time=None,
     date=date,
+    category="Professional",
     )
 
 ################################################################################
@@ -177,6 +180,7 @@ jessica1.add_talk(
     track_name="Green Area",
     time="1:00pm",
     date=date,
+    category="Personal",
     )
 
 
@@ -205,11 +209,12 @@ jane1.add_personal(
     photo="https://cannabisnow.com/wp-content/uploads/2016/10/JaneWest.jpg",
     )
 jane1.add_talk(
-    title="Andriod Things & Stuff 2",
+    title="Professional",
     description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
     track_name="Green Area",
     time="11:00am",
     date=date,
+    category="Professional",
     )
 
 
