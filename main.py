@@ -32,7 +32,9 @@ def schedule_img():
 def index():
     """Homepage"""
 
-    return render_template("homepage.html")
+    google_map_key = os.environ.get("GOOGLE_MAP_API_KEY")
+
+    return render_template("homepage.html", google_map_key=google_map_key)
 
 
 @app.route("/speakers")
