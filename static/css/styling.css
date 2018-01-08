@@ -116,9 +116,11 @@ h1 {
     color: rgb(0,191,165);
 }
 
-#map { 
-    height: 100%; 
-}
+/*#map { 
+    height: 200px;
+    width: 100%;
+}*/
+
 
 /* Speaker CSS */
 .support-card{
@@ -138,7 +140,7 @@ h1 {
   flex-basis: 33.3%; /* change this value for each breakpoint*/
 }
 
-.speaker-pad{
+.card-pad{
     padding-top: 1%;
 }
 
