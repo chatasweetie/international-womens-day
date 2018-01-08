@@ -8,9 +8,9 @@ from model import Speaker, Talk
 # Add your track names (it can be as little as 1 to as many as 6)              #
 ################################################################################
 track_names = [
-            "Green Room",
-            "Blue Room",
-            "Yellow Room",
+            "Green Area",
+            "Blue Area",
+            "Yellow Area",
             ]
 
 ################################################################################
@@ -22,8 +22,7 @@ date = "03/17/2018"
 # Add the time sessions, don't forget registration time!                       #
 ################################################################################
 session_times = [
-                "8:00am",
-                "9:00am",
+                "8:30am",
                 "9:30am",
                 "10:00am",
                 "11:00am",
@@ -32,46 +31,27 @@ session_times = [
                 "2:00pm",
                 "3:00pm",
                 "4:00pm",
+                "5:00pm"
                 ]
 ################################################################################
 # Add the length of the sessions in minutes                                    #
+# This is for the calendar event creation                                      #
 ################################################################################
 session_length = "45"
 
+
+################################################################################
+# Non Speaker Events                                                 #
+################################################################################
+
+registration = Talk("Registration & Breakfast", "Get your name badge and enjoy and light breakfast", time="8:30am", track_name="Green Area")
+welcome = Talk("Welcome", "Come together to kick off the day", time="9:30am", track_name="Green Area")
+lunch = Talk("Lunch", "Delicious Food and Connecting with others", time="12:00pm", track_name="Green Area")
+closing = Talk("Closing & Raffle", "Join us on wrapping up the day with a raffle and thank yous", time="5:00pm", track_name="Green Area")
+
+
 ################################################################################
 # Add your Speaker Information                                                 #
-################################################################################
-
-keynote = Speaker(
-    first_name="River",
-    last_name="Song",
-    )
-keynote.add_social_media(
-    twitter="chatasweetie",
-    linkedin="https://www.linkedin.com/in/jessicaearley/",
-    website="https://chatasweetie.com",
-    youtube="https://www.youtube.com/channel/UCmAIHsNUyAzJ6FQMdU5jdRw",
-    facebook="https://www.facebook.com/jessica.d.earley",
-    google_plus="http://google.com/+JessicaEarleyChatasweetie",
-    )
-keynote.add_professional_information(
-    profession="",
-    empolyeer="",
-    )
-keynote.add_personal(
-    bio="Jessica Dene Earley-Cha is from Calexico, CA and received her bachelor's in Sociology, Education: Applied Psychology from UCSB. She spent almost a decade working with at-risk youth with mental health challenges in disadvantaged areas. Jessica decided to follow her passion of coding and graduated from a software Boot Camp.  She is full stack developer who enjoys sharing knowledge and support others. Jessica is the co-organizer for Google Developers Group San Francisco, is a Women Techmakers lead, teacher for Girl Develop It, active with  Latinxs in Tech and co-creator of DevelopHerDevelopHim. You'll find her either listening to other's life stories or coding one of her many personal projects.",
-    pronoun="she/her",
-    photo=None,
-    )
-keynote.add_talk(
-    title="How to be adorable",
-    description="Information about Celery Talk",
-    track_name="Green Room",
-    time="9:00am",
-    date=date,
-    )
-
-
 ################################################################################
 
 jessica = Speaker(
@@ -98,7 +78,7 @@ jessica.add_personal(
 jessica.add_talk(
     title="Celery",
     description="Information about Celery Talk",
-    track_name="Green Room",
+    track_name="Green Area",
     time="10:00am",
     date=date,
     )
@@ -130,7 +110,7 @@ jane.add_personal(
 jane.add_talk(
     title="Andriod Things & Stuff",
     description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Blue Room",
+    track_name="Blue Area",
     time="11:00am",
     date=date,
     )
@@ -194,7 +174,7 @@ jessica1.add_personal(
 jessica1.add_talk(
     title="Celery 2",
     description="Information about Celery Talk. Blah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blah",
-    track_name="Green Room",
+    track_name="Green Area",
     time="1:00pm",
     date=date,
     )
@@ -227,7 +207,7 @@ jane1.add_personal(
 jane1.add_talk(
     title="Andriod Things & Stuff 2",
     description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Green Room",
+    track_name="Green Area",
     time="11:00am",
     date=date,
     )
@@ -260,7 +240,7 @@ james1.add_personal(
 james1.add_talk(
     title="Andriod Things & Stuff 2",
     description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Green Room",
+    track_name="Green Area",
     time="3:00pm",
     date=date,
     )
@@ -291,7 +271,7 @@ jessica3.add_personal(
 jessica3.add_talk(
     title="A really long title that goes over the assigned thingy",
     description="Information about Celery Talk 3",
-    track_name="Blue Room",
+    track_name="Blue Area",
     time="2:00pm",
     date=date,
     )
@@ -324,7 +304,7 @@ jane3.add_personal(
 jane3.add_talk(
     title="Andriod Things & Stuff 3",
     description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Blue Room",
+    track_name="Blue Area",
     time="1:00pm",
     date=date,
     )
@@ -357,7 +337,7 @@ james3.add_personal(
 james3.add_talk(
     title="Andriod Things & Stuff 3",
     description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Yellow Room",
+    track_name="Yellow Area",
     time="3:00pm",
     date=date,
     )
@@ -388,7 +368,7 @@ jessica4.add_personal(
 jessica4.add_talk(
     title="Celery 4",
     description="Information about Celery Talk 3",
-    track_name="Blue Room",
+    track_name="Blue Area",
     time="1:00pm",
     date=date,
     )
@@ -421,7 +401,7 @@ jane4.add_personal(
 jane4.add_talk(
     title="Andriod Things & Stuff 4",
     description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Blue Room",
+    track_name="Blue Area",
     time="10:00am",
     date=date,
     )
@@ -454,7 +434,7 @@ james4.add_personal(
 james4.add_talk(
     title="Andriod Things & Stuff 4",
     description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Yellow Room",
+    track_name="Yellow Area",
     time="10:00am",
     date=date,
     )
@@ -462,7 +442,6 @@ james4.add_talk(
 ###############Add Speaker objects to Speakers List#############################
 ################################################################################
 speakers_data = [
-    keynote,
     jessica,
     jane,
     james,
@@ -481,7 +460,8 @@ speakers_data = [
 ################################################################################
 # Below creates the talks, ordered_of_sessions and schedule_color              #
 ################################################################################
-talks = {}
+talks={}
+
 missing_data_talks = []
 
 order_of_sessions = {}
@@ -513,4 +493,9 @@ for track in track_names:
         counter -= 4
     schedule_color[track] = colors[counter]
     counter += 1
+
+non_talks = [registration, welcome, lunch, closing]
+
+for n_talk in non_talks:
+    talks[n_talk.slot.get("track_name")][order_of_sessions[n_talk.slot.get("time")]] = n_talk
 

@@ -40,9 +40,10 @@
             <p class="session">
               {{ talks[track][session_num].description|truncate(70) }}
             </p>
-            <p class="session session-speaker">
-              By: {{ talks[track][session_num].speaker.first_name }} {{ talks[track][session_num].speaker.last_name }}
-            </p>
+            {% if talks[track][session_num].speaker %}
+              <p class="session session-speaker">
+                By: {{ talks[track][session_num].speaker.first_name }} {{ talks[track][session_num].speaker.last_name }}
+              </p>
 
             <!-- Button trigger modal -->
               <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#{{ talks[track][session_num].speaker.last_name }}">
@@ -80,6 +81,9 @@
                     </div>
                   </div>
                 </div>
+          {% else %}
+                <p></p>
+          {% endif %}
           {% endif %}
         </div>
       {% endfor %}

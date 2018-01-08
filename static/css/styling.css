@@ -146,6 +146,7 @@ h1 {
 
 button{
     background: rgb(28, 233,182);
+    margin-left: 11%;
 }
 
 .speaker-background{
@@ -240,7 +241,7 @@ button{
 }
 
 .fa-calendar-plus-o:before{
-    color: rgb(102,102,102);
+    color: white;
 }
 
 /* Community */
