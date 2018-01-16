@@ -6,7 +6,7 @@
 {% block content %}
     <div class="container-fluid background-img">
       <h1 id="title">
-        <span class="text-darker"> International Women's Day: </span><br>
+        International Women's Day: <br>
         Celebrating Women in Tech
       </h1>
       <div class="card center-text center-block homepage-card">
@@ -25,7 +25,7 @@
             Google Launch Pad in San Francisco
           </h4>
           <p class="center-text card-text">
-            Want to speak at our event? Submit your Speaking Proposal by Sat. January 13, 2018 at midnight
+            Want to speak at our event? Submit your Speaking Proposal by Sat. January 20, 2018 at midnight
           </p>
           <a target="_blank" href="http://bit.ly/iwd17-speakercall">
             <button type="button" class="btn btn-primary btn-lg" >Call for Papers</button>
@@ -52,14 +52,53 @@
       </div>
     </div>
     <div class="row">
+      <div class="card center-text center-block homepage-card">
+        <div class="card-block">
+          <p class="center-text card-text center-text">
+            <h4 class="center-text">
+              Speaker List & <br>
+              Tickets coming out soon!
+            </h4>
+            <form style="text-align:center;" action="https://tinyletter.com/IWD_SF" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/IWD_SF', 'popupwindow');return true"><p><label for="tlemail">Enter your email address for updates:</label></p><input type="text" style="width:140px" name="email" id="tlemail" /><input type="hidden" value="1" name="embed"/><span></span><input class="btn btn-info" type="submit" value="Subscribe" /></form>
+          </div>
+        </div>
+      </div>
       <div class="col">
-        <h4 class="center-text">
-          Speaker List & <br>
-          Tickets coming out soon!
-        </h4>
+
       </div>
     </div>
   </div>
+  
+  <!-- Highlight Speakers -->
+  <!-- <div class="container blue-banner text-darker">
+    <div class="row">
+      <div class="col-md-1"></div>
+      {% for speaker in random_speakers %}
+        <div class="center-text col-md-4 col-lg">
+          <a href="/speakers#{{ speaker.last_name }}">
+            <img class="img-thumbnail random-speaker" src= "{{ speaker.personal_info["photo"] }}" alt="{{ speaker.first_name }} {{ speaker.last_name }}">
+          <h6>
+            {{ speaker.first_name }} {{ speaker.last_name }} <br>
+            {{ speaker.professional_info['profession'] }} <br>
+            {{ speaker.professional_info['empolyeer'] }}
+          </h6>
+          </a>
+        </div>
+      {% endfor %}
+      <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a href="/speakers">
+          <h5 class="center-text">
+            VIEW ALL SPEAKERS
+          </h5>
+        </a>
+      </div>
+    </div>
+  </div> -->
+
+
   <div class="container-fuild">
     <div id="map">
       <!-- Map lives here -->

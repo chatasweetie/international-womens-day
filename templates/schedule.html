@@ -71,7 +71,7 @@
               </p>
 
             <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#{{ talks[track][session_num].speaker.last_name }}">
+              <button type="button" class="btn btn-primary btn-sm btn-offset" data-toggle="modal" data-target="#{{ talks[track][session_num].speaker.last_name }}">
                 More info
               </button>
               <a class="pull-right" target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&text={{ talks[track][session_num].title }}&details={{ talks[track][session_num].description }}%0D%0ABy: {{ talks[track][session_num].speaker.first_name }} {{ talks[track][session_num].speaker.last_name }}%0D%0A{{ talks[track][session_num].speaker.personal_info['bio'] }}&location={{ talks[track][session_num].slot['track_name'] }}&dates={{ talks[track][session_num].slot['calendar_datetime'] }}"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a>

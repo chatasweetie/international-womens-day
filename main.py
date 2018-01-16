@@ -4,8 +4,9 @@ import os
 from flask import Flask, render_template, send_file
 from flask_debugtoolbar import DebugToolbarExtension
 from flask import send_from_directory
-from data import speakers_data, talks, track_names, session_times, missing_data_talks, order_of_sessions, schedule_color
+from data import speakers_data, talks, track_names, session_times, missing_data_talks, order_of_sessions, schedule_color, selects_four_random_speakers
 from organizerdata import organizers_data
+
 
 app = Flask(__name__)
 
@@ -28,13 +29,16 @@ def schedule_img():
     return send_from_directory(os.path.join(app.root_path, "static", "imgs", "assests"),
                                "speakers.jpg", mimetype="image/png")
 
+
 @app.route("/")
 def index():
     """Homepage"""
 
+    random_speakers = selects_four_random_speakers(speakers_data)
+
     google_map_key = os.environ.get("GOOGLE_MAP_API_KEY")
 
-    return render_template("homepage.html", google_map_key=google_map_key)
+    return render_template("homepage.html", random_speakers=random_speakers, google_map_key=google_map_key)
 
 
 @app.route("/speakers")
@@ -68,12 +72,12 @@ def schedule():
                             schedule_color=schedule_color,
                             )
 
+
 @app.route("/community")
 def community():
     """Community Guidelines"""
 
     return render_template("community_guidelines.html")
-
 
 
 @app.route('/show/sponsorship-pdf/')
@@ -88,6 +92,13 @@ def organizers():
 
     return render_template("organizers.html",
                             organizers_data=organizers_data)
+
+
+@app.route("/faq")
+def faq():
+    """FAQ Page"""
+
+    return render_template("faq.html")
 
 ############################################################################
 # Error Pages

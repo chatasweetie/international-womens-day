@@ -53,6 +53,11 @@ body {
     width:auto;
 }
 
+.sponsor-title{
+    padding-top: 3%;
+    padding-bottom: 1%
+}
+
 
 /* Homepage */
 .background-img {
@@ -79,6 +84,10 @@ body {
     text-align: center;
 }
 
+h1 {
+    color: black;
+}
+
 #title {
     padding-left: 15%;
     padding-right: 15%;
@@ -86,11 +95,7 @@ body {
     padding-bottom: 5%;
     text-align: center;
     width: 100%;
-    color: rgb(28,233,182)
-}
-
-h1 {
-    color: black;
+    color: rgb(28,233,182);
 }
 
 .blue-banner{
@@ -108,12 +113,24 @@ h1 {
     }
 }
 
+.homepage-card{
+    margin-bottom: 2%;
+}
+
+#tlemail{
+    margin-right: 1%;
+}
+
 .text-darker{
     color: #2f2f2f;
 }
 
 .homepage-pop{
     color: rgb(0,191,165);
+}
+
+.random-speaker{
+    height: 200px;
 }
 
 /*#map { 
@@ -146,7 +163,6 @@ h1 {
 
 button{
     background: rgb(28, 233,182);
-    margin-left: 11%;
 }
 
 .speaker-background{
@@ -190,6 +206,10 @@ button{
     color:black;
     font-size: 1.05rem;
     /*padding-bottom: .5%;*/
+}
+
+.btn-offset{
+    margin-left: 11%;
 }
 
 .grey-banner{
@@ -260,6 +280,12 @@ button{
 /* Organizers */
 .modal-content{
     color: rgb(102,102,102);
+}
+
+/* FAQ*/
+
+.link-padding{
+    padding-top: 5%;
 }
 
 /* footer */

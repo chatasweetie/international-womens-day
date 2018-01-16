@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 ###Above is to find the system's source code encoding
 from model import Speaker, Talk
+from random import randint
 
 
 
@@ -504,3 +505,20 @@ non_talks = [registration, welcome, lunch, closing]
 for n_talk in non_talks:
     talks[n_talk.slot.get("track_name")][order_of_sessions[n_talk.slot.get("time")]] = n_talk
 
+################################################################################
+
+
+def selects_four_random_speakers(speakers_data):
+    """Returns four random speakers"""
+
+    random_nums = []
+
+    for num in range(4):
+        random_num = randint(0, 11)
+        print random_num
+        while random_num in random_nums:
+            random_num = randint(0,11)
+        random_nums.append(random_num)
+    random_speakers = [speakers_data[random_nums[0]], speakers_data[random_nums[1]], speakers_data[random_nums[2]], speakers_data[random_nums[3]]]
+    print random_nums
+    return random_speakers
