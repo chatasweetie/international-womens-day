@@ -51,7 +51,6 @@
         </p>
       </div>
     </div>
-    <div class="row">
       <div class="card center-text center-block homepage-card">
         <div class="card-block">
           <p class="center-text card-text center-text">
@@ -75,7 +74,7 @@
       <div class="col-md-1"></div>
       {% for speaker in random_speakers %}
         <div class="center-text col-md-4 col-lg">
-          <a href="/speakers#{{ speaker.last_name }}">
+          <a href="/speakers#{{ speaker.first_name }}{{ speaker.last_name }}">
             <img class="img-thumbnail random-speaker" src= "{{ speaker.personal_info["photo"] }}" alt="{{ speaker.first_name }} {{ speaker.last_name }}">
           <h6>
             {{ speaker.first_name }} {{ speaker.last_name }} <br>
