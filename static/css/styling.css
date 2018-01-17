@@ -277,6 +277,10 @@ button{
     padding-bottom: 5%
 }
 
+.community-pull-down{
+    margin-top: 2%;
+}
+
 /* Organizers */
 .modal-content{
     color: rgb(102,102,102);
@@ -284,8 +288,19 @@ button{
 
 /* FAQ*/
 
+.faq-background{
+    background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/DSC03065.jpg?resize=1570,1047&quality=50");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 5%
+}
+
 .link-padding{
     padding-top: 5%;
+}
+
+.faq-case{
+    border-radius: 20px;
 }
 
 /* footer */
