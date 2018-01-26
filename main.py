@@ -21,7 +21,7 @@ app.jinja_env.undefined = "StrictUndefined"
 @app.route("/logo.png")
 def favicon():
     return send_from_directory(os.path.join(app.root_path, "static", "imgs", "assests"),
-                               "iwd-square-small.jpg", mimetype="image/png")
+                               "IWD_logo_save_date.jpg", mimetype="image/png")
 
 
 @app.route("/schedule.png")
@@ -36,9 +36,7 @@ def index():
 
     random_speakers = selects_four_random_speakers(speakers_data)
 
-    google_map_key = os.environ.get("GOOGLE_MAP_API_KEY")
-
-    return render_template("homepage.html", random_speakers=random_speakers, google_map_key=google_map_key)
+    return render_template("homepage2.html", random_speakers=random_speakers)
 
 
 @app.route("/speakers")
@@ -54,7 +52,7 @@ def speakers():
 @app.route("/schedule")
 def schedule():
     """Schedule Page"""
-
+    print talks
     if missing_data_talks:
         print "*"*80
         print "The following talks are don't have a track & time:"
@@ -71,6 +69,15 @@ def schedule():
                             range_session_times=range_session_times,
                             schedule_color=schedule_color,
                             )
+
+
+@app.route("/talks")
+def only_talks():
+    """Talk Page"""
+    print speakers_data
+
+    return render_template("talks.html",
+                            speaker_data=speakers_data)
 
 
 @app.route("/community")

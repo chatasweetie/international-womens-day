@@ -27,7 +27,7 @@
       <div class="card-deck">
 
       {% for speaker in organizers_data %}
-      <div class="col-md-6 col-lg-3 card-pad">
+      <div class="col-6 col-md-4 col-lg-3 card-pad">
         <div class="card center-text {{ speaker.color}}">
           <img class="card-img-top speaker-photo" src= "{{ speaker.personal_info["photo"] }}" alt="{{ speaker.first_name }} {{ speaker.last_name }}">
           <div class="card-block">
@@ -55,27 +55,27 @@
             </p> -->
             <p class="card-text session">
               {% if speaker.social_media.get("twitter") %}
-                <a href="https://twitter.com/{{ speaker.social_media.get("twitter") }}">
+                <a href="https://twitter.com/{{ speaker.social_media.get("twitter") }}" target="_blank">
                   <i class="fa fa-twitter"></i></a>&nbsp;
               {% endif %}
 
               {% if speaker.social_media.get("linkedin") %}
-                <a href="{{ speaker.social_media.get("linkedin") }}">
+                <a href="{{ speaker.social_media.get("linkedin") }}" target="_blank">
                   <i class="fa fa-linkedin"></i></a>&nbsp;
               {% endif %}
 
               {% if speaker.social_media.get("facebook") %}
-                <a href="{{ speaker.social_media.get("facebook") }}">
+                <a href="{{ speaker.social_media.get("facebook") }}" target="_blank">
                   <i class="fa fa-facebook"></i></a>&nbsp;
               {% endif %}
 
               {% if speaker.social_media.get("google_plus") %}
-                <a href="{{ speaker.social_media.get("google_plus") }}">
+                <a href="{{ speaker.social_media.get("google_plus") }}" target="_blank">
                   <i class="fa fa-google-plus"></i></a>&nbsp;
               {% endif %}
 
               {% if speaker.social_media.get("website") %}
-                <a href="{{ speaker.social_media.get("website") }}">
+                <a href="{{ speaker.social_media.get("website") }}" target="_blank">
                   <i class="fa fa-laptop"></i></a>&nbsp;
               {% endif %}
             </p>

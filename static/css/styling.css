@@ -58,13 +58,22 @@ body {
     padding-bottom: 1%
 }
 
+.kapor-padding{
+    padding-top: 3%;
+}
 
 /* Homepage */
 .background-img {
-    background-image: url("https://github.com/chatasweetie/international-womens-day/blob/master/static/imgs/assests/vertical-speaker.jpg?raw=true");
+    background-image: url("/static/imgs/assests/vertical-speaker.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     padding-bottom: 5%
+}
+
+.homepage-img{
+    margin-bottom: -20%;
+    margin-top: -9%;
+    width: 100%;
 }
 
 .img-transparent {
@@ -92,7 +101,7 @@ h1 {
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 5%;
-    padding-bottom: 5%;
+    /*padding-bottom: 5%;*/
     text-align: center;
     width: 100%;
     color: rgb(28,233,182);
@@ -133,10 +142,13 @@ h1 {
     height: 200px;
 }
 
-/*#map { 
-    height: 200px;
-    width: 100%;
-}*/
+.padding-top{
+    padding-top: 3%;
+}
+
+.padding-bmt {
+    padding-bottom: 1%;
+}
 
 
 /* Speaker CSS */
@@ -224,8 +236,16 @@ button{
     background-color: rgb(79,195,247);
 }
 
+.blue-op{
+    background: rgba(79,195,247,0.7);
+}
+
  .green {
     background-color: rgb(28,233,182);
+ }
+
+ .green-op {
+    background: rgba(28,233,182,0.7);
  }
 
 .dark-green{
@@ -281,6 +301,27 @@ button{
     margin-top: 2%;
 }
 
+/* Talks */
+
+.talk-background{
+    background-image: url("/static/imgs/assests/talks.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 20%;
+    color: white;
+}
+
+.smaller-font{
+    font-size: 75%;
+}
+
+@media screen and (min-width: 480px) {
+    .talk-background {
+        padding-bottom: 5%;
+    }
+}
+
+
 /* Organizers */
 .modal-content{
     color: rgb(102,102,102);
@@ -301,6 +342,12 @@ button{
 
 .faq-case{
     border-radius: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 /* footer */

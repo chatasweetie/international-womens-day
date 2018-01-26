@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="talk-background">
+  <div class="row">
+    <div class="container page-space ">
+      <h1 class="center subheadings">
+        Talks
+      </h1>
+      <h4 class="center subheadings"> {{speaker_data|length }} of the 18 talks are listed, more to come</h4>
+    </div>
+  </div>
+</div>
+
+<div class="container-fuild grey-banner text-darker">
+  <div class="row">
+    <div class="col center-text offset-md-1">
+      <i class="fa fa-laptop" aria-hidden="true"></i> Technology Session
+    </div>
+    <div class="col center-text">
+      <i class="fa fa-briefcase" aria-hidden="true"></i> Professional/Personal Session
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="container">
+      <div class="card-deck">
+
+      {% for speaker in speaker_data %}
+      <div class="col-md-6 col-lg-4 card-pad " id="{{ speaker.first_name }}{{ speaker.last_name }}">
+        <div class="card center-text">
+          <div class="card-block {{ speaker.color}}">
+            <p class="session-title session">{{ speaker.talk.title }} 
+              {% if speaker.talk.category  == "Technology" %}
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+              {% endif %}
+              {% if speaker.talk.category  == "Professional" %}
+                <i class="fa fa-user" aria-hidden="true"></i>
+              {% endif %} 
+            </p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{ speaker.last_name }}">
+                More info
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="{{ speaker.last_name }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">{{ speaker.talk.title }}</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body center-text">
+                      {{ speaker.talk.description }} 
+                    </div>
+                    <div class="modal-footer center">
+                      <small>By: <a href="/speakers#{{ speaker.first_name }}{{ speaker.last_name }}">{{ speaker.first_name }} {{ speaker.last_name }}</a>, {{ speaker.professional_info['profession'] }} {{ speaker.professional_info['empolyeer'] }}
+                      </small>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -55,30 +55,29 @@ closing = Talk("Closing & Raffle", "Join us on wrapping up the day with a raffle
 # Add your Speaker Information                                                 #
 ################################################################################
 
-jessica = Speaker(
-    first_name="Jessica",
-    last_name="Earley-Cha",
+chloe = Speaker(
+    first_name="Chloe",
+    last_name="Condon",
     )
-jessica.add_social_media(
-    twitter="chatasweetie",
-    linkedin="https://www.linkedin.com/in/jessicaearley/",
-    website="https://chatasweetie.com",
-    youtube="https://www.youtube.com/channel/UCmAIHsNUyAzJ6FQMdU5jdRw",
-    facebook="https://www.facebook.com/jessica.d.earley",
-    google_plus="http://google.com/+JessicaEarleyChatasweetie",
+chloe.add_social_media(
+    twitter="ChloeCondon",
+    linkedin="https://www.linkedin.com/in/chloecondon/",
+    website="medium.com/@chloecondon",
+    youtube="https://www.youtube.com/channel/UChWn8UyK3PNfMLYOCzrH6sQ/videos",
+    facebook="https://www.facebook.com/misschloecondon",
     )
-jessica.add_professional_information(
-    profession="Software Instructor",
-    empolyeer="Girl Develop, It",
+chloe.add_professional_information(
+    profession="Developer Evangelist",
+    empolyeer="Sentry.io",
     )
-jessica.add_personal(
-    bio="Jessica Dene Earley-Cha is from Calexico, CA and received her bachelor's in Sociology, Education: Applied Psychology from UCSB. She spent almost a decade working with at-risk youth with mental health challenges in disadvantaged areas. Jessica decided to follow her passion of coding and graduated from a software Boot Camp.  She is full stack developer who enjoys sharing knowledge and support others. Jessica is the co-organizer for Google Developers Group San Francisco, is a Women Techmakers lead, teacher for Girl Develop It, active with  Latinxs in Tech and co-creator of DevelopHerDevelopHim. You'll find her either listening to other's life stories or coding one of her many personal projects.",
-    pronoun="she/her",
-    photo="https://chatasweetie.files.wordpress.com/2015/10/jessica-short.png?w=300&h=317",
+chloe.add_personal(
+    bio="Former musical theatre actress and Hackbright Academy graduate, Chloe is now a Developer Evangelist at Sentry. Pre-Hackbright, she spent her nights and weekends performing in the Bay Area as a singer/actress and worked in tech by day. To support her theatre career, she started to learn to code on her own through online resources. Perhaps the only engineer you'll meet who has been in 'Hairspray', 'Xanadu', and 'Jerry Springer: the Opera'- she is passionate about bringing people with non-traditional backgrounds into the world of tech. If you're trying to place her face, yes- she's the young woman giving the awkward thumbs up in the 'What It's Like to be a Woman at a Tech Conference' article (which she also wrote). A quick Google search of her will provide you with getting started with Docker videos, theatre reviews, tech blogs, and videos of her singing- enjoy!",
+    pronoun="She/Her",
+    photo="https://www.devopsdays.org/events/2017-dallas/speakers/chloe-condon-new.jpg",
     )
-jessica.add_talk(
-    title="Celery",
-    description="Information about Celery Talk",
+chloe.add_talk(
+    title="Logging, and Errors, and Metrics- oh my!",
+    description="As engineers, we build pretty cool apps. Once users start using our cool apps... well, we run into the fun process of discovering errors. Keeping track of these issues can get messy, getting alerted is stressful, and measuring it can provide you with an overwhelming amount of information. So, how do we combine all these things to make our cool apps work even better than before? In this talk, we'll dive into logging, errors, and metrics.",
     track_name="Green Area",
     time="10:00am",
     date=date,
@@ -88,111 +87,275 @@ jessica.add_talk(
 
 ################################################################################
 
-jane = Speaker(
-    first_name="Jane",
-    last_name="Villaneuva",
+linda = Speaker(
+    first_name="Linda",
+    last_name= "Avendano",
     )
-jane.add_social_media(
+linda.add_social_media(
     twitter=None,
-    linkedin=None,
+    linkedin="https://www.linkedin.com/in/avendanolinda/",
     website=None,
     youtube=None,
     facebook=None,
     google_plus=None,
     )
-jane.add_professional_information(
+linda.add_professional_information(
     profession="Software Developer",
-    empolyeer="UberMelon",
+    empolyeer="Curai",
     )
-jane.add_personal(
-    bio="Jane is amazing developer",
-    pronoun="she/her",
-    photo="https://cannabisnow.com/wp-content/uploads/2016/10/JaneWest.jpg",
+linda.add_personal(
+    bio="Linda is a senior engineer with a master's degree in Software Engineering for Carnegie Mellon University. Originally from Mexico City, she has lived in Silicon Valley for the past 8 years. She has worked at Electronic Arts, Sears Holdings and Netflix. Thanks to her ability to do 'non-traditional' networking, she was able to land a great job at Curai, a startup company in the health care space. There, as a first time user of React JS, she has learned some of the best practices and tools used to create React applications.",
+    pronoun="she/her/hers",
+    photo="static/imgs/speakers/linda.png",
     )
-jane.add_talk(
-    title="Andriod Things & Stuff",
-    description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
+linda.add_talk(
+    title="React JS for non React developers",
+    description="Have you ever wonder if React JS is suitable for your application? Do you already have a Javascript website and are thinking about refactoring? Are you unsure about the benefits or the learning curve of React JS?In this talk I am going to describe the characteristics, benefits and best practices of React JS, the tools and frameworks to build a website and my experience transitioning from a pure Javascript application to a React JS website.",
     track_name="Blue Area",
     time="11:00am",
     date=date,
-    category="Professional",
+    category="Technology",
     )
 
 
 ################################################################################
 
 
-james = Speaker(
-    first_name="James",
-    last_name="Cha-Earley",
+audrey = Speaker(
+    first_name="Audrey",
+    last_name="Chaing",
     )
-james.add_social_media(
-    twitter=None,
-    linkedin="https://www.linkedin.com/in/jamesjcha/",
-    website=None,
+audrey.add_social_media(
+    twitter="audsinthecity",
+    linkedin="https://www.linkedin.com/in/audreychaing/",
+    website="https://www.blockchaing.org",
     youtube=None,
-    facebook=None,
+    facebook="https://www.facebook.com/audrey.chilaquiles",
     google_plus=None,
     )
-james.add_professional_information(
-    profession="Software Developer",
-    empolyeer="Clover",
+audrey.add_professional_information(
+    profession="Cryptocurrency Trader/Blockchain Analyst",
+    empolyeer="Blockchaing",
     )
-james.add_personal(
-    bio="James is a great person.",
-    pronoun="he/him",
-    photo="data:image/jpeg;base64,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",
+audrey.add_personal(
+    bio="Audrey is a cryptocurrency trader and blockchain analyst, and runs the news site blockchaing.org. She has been trading Bitcoin since 2013 and is a member of the Oakland Blockchain Developers and SF Ethereum Developers. She is running the MIT Applied Blockchain Series, helping participants create a demo-able product from an idea. Previously, she co-founded 2 companies in food tech and genetics, through which she participated in Start-Up Chile and Singularity University Global Solutions Program. She has over a decade of experience on Wall Street as an investor, trader, and research analyst at companies like Credit Suisse, Wells Fargo, and BlackRock. Audrey has a degree in Computer Science from MIT with a concentration in Artificial Intelligence, and earned her MBA at the Wharton School of the University of Pennsylvania. She is a frequent speaker at events like Women in Blockchain, Blockchain & Cryptocurrency Meetup, SVIAccelerator InsurTech Blockchain Bootcamp, and CryptoHQ.",
+    pronoun="She, her, hers",
+    photo="static/imgs/speakers/audrey.png",
     )
-james.add_talk(
-    title="Andriod Things & Stuff",
-    description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
+audrey.add_talk(
+    title="Blockchain and Cryptocurrencies for Fun and Profit",
+    description="What is blockchain and why do we care? How to get started trading crypto and how to safeguard your investments? What are the biggest problems and potential opportunities using this technology? All this and more including trends in the industry and examples in self-sovereign identity, financial services, supply chain, and decentralized apps.",
     track_name=None,
     time=None,
-    date=date,
+    date=None,
+    category="Technology",
+    )
+
+################################################################################
+
+
+meredith = Speaker(
+    first_name="Meredith",
+    last_name="Hassett",
+    )
+meredith.add_social_media(
+    twitter="mlhassett",
+    linkedin="https://www.linkedin.com/in/meredith-hassett/",
+    website=None,
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+meredith.add_professional_information(
+    profession="Developer Evangelist",
+    empolyeer="SAP",
+    )
+meredith.add_personal(
+    bio="Meredith is a Developer Evangelist for SAP sharing her knowledge in front-end development, UI design, and IoT. Originally from the Philadelphia Area, she attended the University of Virginia where she got a BS in Computer Engineering. Meredith has worked on applications for financial institutions, non-profits, and travel groups. She is a FIRST Robotics alumni and has worked on integrated technology solutions in designing novelty products. Meredith currently works out of San Francisco and spends her days finding new ways to blend her other passions with technology.",
+    pronoun="She",
+    photo="static/imgs/speakers/meredith.png",
+    )
+meredith.add_talk(
+    title="Try your hand at Design Thinking",
+    description="Design Thinking is one of the newest brainstorming techniques that allows you to solve the right problem the first time. How many times have you built an app for your users that isn't quite right and leads to a costly redesign? In software development, maintenance is the costliest part of the cycle. Design thinking enables you to build the right solution for your users to help reduce that cost. Join me as we use design thinking to solve a real problem in this 45-minute session!",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Technology",
+    )
+
+################################################################################
+
+
+sarah = Speaker(
+    first_name="Sarah",
+    last_name="Lohmeier",
+    )
+sarah.add_social_media(
+    twitter="slohmes",
+    linkedin="http://linkedin.com/in/sarahlohmeier",
+    website="https://slohmes.wordpress.com/",
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+sarah.add_professional_information(
+    profession="Software Developer",
+    empolyeer="ThoughtWorks",
+    )
+sarah.add_personal(
+    bio="Full-stack engineer and systems enthusiast who delights in good naming, constant learning, and empathy.",
+    pronoun="she/her",
+    photo="static/imgs/speakers/sarah.jpg",
+    )
+sarah.add_talk(
+    title="A Tour of the JS Ecosystem",
+    description="Module bundlers! Package managers! Superscripts! Polyfills! Frameworks galore! There are a multitude of JavaScript-based frameworks and tools that make up the 'JS ecosystem' underpinning modern front-end development. This talk is a guided journey through this exciting, but sometimes overwhelming, landscape. By breaking down the elements of a modern front-end tech stack, calling out the problems they're trying to solve, and giving examples of commonly used libraries, this talk will help front-end enthusiasts of all levels gain a better understanding of what the JS ecosystem is and how it has evolved.",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Technology",
+    )
+
+################################################################################
+
+
+shruti = Speaker(
+    first_name="Shruti",
+    last_name="Sharma",
+    )
+shruti.add_social_media(
+    twitter="curioushruti",
+    linkedin="https://www.linkedin.com/in/shruti-sharma-4214b538/",
+    website=None,
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+shruti.add_professional_information(
+    profession="Machine Learning Engineer",
+    empolyeer="VSCO",
+    )
+shruti.add_personal(
+    bio="Shruti Sharma is a Machine Learning Engineer at VSCO (www.vsco.co) where she trains deep learning models and builds APIs to use these models in VSCO's products. Previously, she worked on building image processing tools at VSCO. She holds a Masters degree from University of Southern California with a focus on image processing and computer vision. She enjoys keeping up with the fascinating advances in the field of machine learning and is excited about where the field is headed. She's passionate about supporting and mentoring women and other minorities who are looking to enter the field of technology.",
+    pronoun="She/Her",
+    photo="static/imgs/speakers/shruti.jpg",
+    )
+shruti.add_talk(
+    title="Deep Convolutional Neural Networks using TensorFlow and TensorFlow Serving",
+    description="TensorFlow is a powerful open-source library from Google for machine intelligence. It is used by researchers, engineers, students, and others. It has been key in the democratization of deep learning across multiple domains. In this talk, Shruti will walk through the process of training an image classification model using TensorFlow in Keras, and then using TensorFlow Serving to serve the model and run prediction on images. After building your own application, Shruti will show how this looks in a real production environment - how the Machine Learning team at VSCO leverages TensorFlow and TensorFlow Serving for real-time image classification.",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Technology",
+    )
+
+################################################################################
+
+
+deborah = Speaker(
+    first_name="Deborah",
+    last_name="Raji",
+    )
+deborah.add_social_media(
+    twitter="hashtag_include",
+    linkedin="https://www.linkedin.com/in/deborah-raji-065751b2/",
+    website=None,
+    youtube=None,
+    facebook="https://www.facebook.com/projectincludeskule/",
+    google_plus=None,
+    )
+deborah.add_professional_information(
+    profession="Machine Learning Engineer Intern",
+    empolyeer="Clarifai",
+    )
+deborah.add_personal(
+    bio="Deborah Raji is the founder and former Executive Director of Project Include, a youth-led organization that teaches computer programming in the libraries and community centers of city-designated low income communities. Over just two summers, the program has run seven week coding bootcamps for a total of just under 500 student participants aged 10 to 18, including a handful of adult and family workshops. Mainly operating in Toronto, Ontario in Canada, the group competed its first international mission last summer, reaching 350 students in Quito, Ecuador. Deb is a proud Canadian studying Robotics Engineering at the University of Toronto, currently taking  year off to intern at Clarifai, a computer vision startup in New York City. In her spare time, she volunteers with Joy Buolamwini of the MIT Lab, as part of the Algorithmic Justice League. ",
+    pronoun="Her",
+    photo="static/imgs/speakers/deborah.jpg",
+    )
+deborah.add_talk(
+    title="Doomed to Repeat It: Exploring Machine Bias in Computer Vision",
+    description="In the case of machine learning, when we do learn from history, we're doomed to repeat it. What do you get when you Google simple concepts like 'hand', 'foot' or 'healthy face'? Well, not a lot of diversity. However, we continue to use such biased media-influenced image datasets to feed the machine learning models that do everything from opening our phone and identifying criminals to recommending makeup.  In this session, I plan to walk through an overview of how computer vision models are created, and why each step of the way is an opportunity to introduce bias that could skew results to favour only some segments of the population. I'll also go over the great work being done at Clarifai and the Algorithmic Justice League to combat machine bias and some strategies being developed to support companies and research groups looking to be more mindful about the ML models they create.",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Technology",
+    )
+################################################################################
+
+
+dobs = Speaker(
+    first_name="Alexandra (Dobs)",
+    last_name="Dobkin",
+    )
+dobs.add_social_media(
+    twitter=None,
+    linkedin="https://www.linkedin.com/in/alexandradobkin/",
+    website="http://www.alexandradobkin.com/",
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+dobs.add_professional_information(
+    profession="Software Engineer",
+    empolyeer="Bloomberg LP",
+    )
+dobs.add_personal(
+    bio="Alexandra Dobkin (Dobs) is currently a software engineer at Bloomberg LP in the San Francisco office (complete with a tank containing stingrays and a shark!).  At work, Dobs exclusively programs in JavaScript.  In order to become a software engineer, she attended Hackbright Academy's full-time bootcamp, an all-women full-stack web development program.  She had a phenomenal experience with Hackbright and currently serves as a Hackbright Ambassador.  Previously, she held careers in management consulting as well as in finance.  She studied Mathematical Methods in the Social Sciences, Economics, and Anthropology at Northwestern University (go cats!).  Dobs enjoys having an interdisciplinary perspective, and is proud of her non-traditional background.  When not coding, she can be found doing Pilates, decorating her apartment, or attending modern art museums.",
+    pronoun="she/ her/ hers",
+    photo="static/imgs/speakers/dobs.jpg",
+    )
+dobs.add_talk(
+    title="I Promise Fun with Asynchronicity - JavaScript Promises ",
+    description="We'll explore JavaScript Promises -- what are  Promises, why/why they should be used, and how they differ from callbacks.  We'll construct a Promise together, as well as look at code snippets that make use of popular 'thenables' in the ubiquitous Bluebird Promises library.  I'll highlight common pitfalls and confusions, and close out with what's next in JavaScript for asynchronous calls.",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Technology",
+    )
+
+################################################################################
+
+
+wendy = Speaker(
+    first_name="Wendy",
+    last_name="Saccuzzo",
+    )
+wendy.add_social_media(
+    twitter="aboutworkstuff",
+    linkedin="https://www.linkedin.com/in/wendysaccuzzo/",
+    website="https://www.aboutworkstuff.com",
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+wendy.add_professional_information(
+    profession="Career Strategist",
+    empolyeer="Career & Personal Development Institute",
+    )
+wendy.add_personal(
+    bio="Wendy Saccuzzo is a career strategist who has worked with over 1,100 women in tech on their career transition, and in a recruiting capacity has helped to build engineering teams in early stage startup companies.  She's involved with Women Who Code and Empowered Tech, and holds a Masters degree in Counseling with a focus on Career Development. Outside of work, Wendy is wrangling her kids, gardening, cooking or hiking.",
+    pronoun="She/Her",
+    photo="static/imgs/speakers/wendy.jpg",
+    )
+wendy.add_talk(
+    title="Building Your Career Roadmap",
+    description="Life takes us on all kinds of twists and turns, and it's a good idea to check in with yourself and think about what you need to survive and thrive in your career.  In this exercise, you'll create a map of where you've been, what you've learned, what you're good at, and what you want to avoid to get closer to your dream job.",
+    track_name=None,
+    time=None,
+    date=None,
     category="Professional",
     )
 
 ################################################################################
 
-jessica1 = Speaker(
-    first_name="Jessica",
-    last_name="EarleyCha",
-    )
-jessica1.add_social_media(
-    twitter="chatasweetie",
-    linkedin="https://www.linkedin.com/in/jessicaearley/",
-    website="https://chatasweetie.com",
-    youtube="https://www.youtube.com/channel/UCmAIHsNUyAzJ6FQMdU5jdRw",
-    facebook="https://www.facebook.com/jessica.d.earley",
-    google_plus="http://google.com/+JessicaEarleyChatasweetie",
-    )
-jessica1.add_professional_information(
-    profession="Software Instructor",
-    empolyeer="Girl Develop, It",
-    )
-jessica1.add_personal(
-    bio="Jessica Dene Earley-Cha is from Calexico, CA and received her bachelor's in Sociology, Education: Applied Psychology from UCSB. She spent almost a decade working with at-risk youth with mental health challenges in disadvantaged areas. Jessica decided to follow her passion of coding and graduated from a software Boot Camp.  She is full stack developer who enjoys sharing knowledge and support others. Jessica is the co-organizer for Google Developers Group San Francisco, is a Women Techmakers lead, teacher for Girl Develop It, active with  Latinxs in Tech and co-creator of DevelopHerDevelopHim. You'll find her either listening to other's life stories or coding one of her many personal projects.",
-    pronoun="she/her",
-    photo=None,
-    )
-jessica1.add_talk(
-    title="Celery 2",
-    description="Information about Celery Talk. Blah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blah",
-    track_name="Green Area",
-    time="1:00pm",
-    date=date,
-    category="Personal",
-    )
 
-
-################################################################################
-
-
-jane1 = Speaker(
-    first_name="Jane",
-    last_name="Villaneuva",
+kristi = Speaker(
+    first_name="Kristi",
+    last_name="Krulcik",
     )
-jane1.add_social_media(
+kristi.add_social_media(
     twitter=None,
     linkedin=None,
     website=None,
@@ -200,194 +363,98 @@ jane1.add_social_media(
     facebook=None,
     google_plus=None,
     )
-jane1.add_professional_information(
-    profession="Software Developer",
-    empolyeer="UberMelon",
+kristi.add_professional_information(
+    profession="Marketing",
+    empolyeer="Google",
     )
-jane1.add_personal(
-    bio="Jane is amazing developer",
+kristi.add_personal(
+    bio="Kristi Krulcik is currently a product marketer at Google, where her love of asking questions, gathering insights, and creating an intuitive customer experience can thrive. Prior to Google, Kristi worked at Apple, created content for a startup incubator, and launched a radio station. She is passionate about helping women feel confident in their professional skills and loves learning from others. On the weekends, you can find her biking around the Presidio and exploring new San Francisco neighborhoods.",
     pronoun="she/her",
-    photo="https://cannabisnow.com/wp-content/uploads/2016/10/JaneWest.jpg",
+    photo="static/imgs/speakers/kristi.jpg",
     )
-jane1.add_talk(
-    title="Professional",
-    description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Green Area",
-    time="11:00am",
-    date=date,
+kristi.add_talk(
+    title="Networking for Those Who Hate Networking Events",
+    description="We've all been there: a networking event pops up that seems like a 'good idea' for your career. Why? Because everyone tells us to network, network, network! Go to those events! Practice that elevator speech! Know how to mingle and stand out and dress appropriately and follow up un-annoyingly and get your next dream job from that one person you met that one time! But who said another awkward, uncomfortable networking event is the only solution? Thankfully, there are better ways to make connections. So let's explore them, and find what works best for you.",
+    track_name=None,
+    time=None,
+    date=None,
     category="Professional",
     )
 
+################################################################################
+
+
+irana = Speaker(
+    first_name="Irana",
+    last_name="Wasti",
+    )
+irana.add_social_media(
+    twitter="IranaWasti",
+    linkedin="https://www.linkedin.com/in/irana-wasti-40970b3/",
+    website=None,
+    youtube=None,
+    facebook="https://www.facebook.com/irana.wasti",
+    google_plus=None,
+    )
+irana.add_professional_information(
+    profession="SVP of Productivity",
+    empolyeer="GoDaddy",
+    )
+irana.add_personal(
+    bio="As SVP and General Manager for GoDaddy's Productivity business, Irana leads teams that provide small businesses with tools and services that help them improve communication and run their businesses.",
+    pronoun="female: she, her etc.",
+    photo="static/imgs/speakers/irana.jpg",
+    )
+irana.add_talk(
+    title="Mindful (and creative) Work-Life Integration",
+    description="There is no such thing as work-life balance. Every day, either work or family requires just a little bit more attention than the other. Irana can discuss how she uses her 'guiding principles' as a north star to pursue both career and family goals in what we call work-life integration. She can share about her experience at Harvard Business School, where her and her husband attended at the same time and were the first couple to be pregnant and have a child while attending HBS. She set an example and worked with the school to help improve policies for women and families to come. Although Irana is now a top executive at GoDaddy, she still is able to prioritize time with her family and can share tips on how she accomplishes that integration.",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Professional",
+    )
 
 ################################################################################
 
 
-james1 = Speaker(
-    first_name="James",
-    last_name="Cha-Earley",
+maytal = Speaker(
+    first_name="Maytal",
+    last_name="Dahan",
     )
-james1.add_social_media(
-    twitter=None,
-    linkedin="https://www.linkedin.com/in/jamesjcha/",
-    website=None,
+maytal.add_social_media(
+    twitter="maytaldahan",
+    linkedin="https://www.linkedin.com/in/maytaldahan",
+    website="https://www.tacc.utexas.edu/about/directory/maytal-dahan",
     youtube=None,
     facebook=None,
     google_plus=None,
     )
-james1.add_professional_information(
-    profession="Software Developer",
-    empolyeer="Clover",
+maytal.add_professional_information(
+    profession="Director/Software Engineer",
+    empolyeer="Texas Advanced Computing Center, The University of Texas at Austin",
     )
-james1.add_personal(
-    bio="James is a great person.",
-    pronoun="he/him",
-    photo="data:image/jpeg;base64,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",
+maytal.add_personal(
+    bio="Maytal Dahan has been telecommuting for fifteen years and is a software engineer and Director of the Advanced Computing Interfaces Department at the Texas Advanced Computing Center (TACC) at The University of Texas at Austin. Maytal has a B.S in Computer Science from The University of California, San Diego and a M.S in Software Engineering from The University of Texas at Austin. Maytal first started telecommuting for the San Diego Supercomputer Center as a software developer. Next, Maytal joined TACC in August 2002 as a Software Developer working remotely full-time from Los Angeles. She is involved in several software projects that interfaces, software, and services web portal applications. Maytal is the project lead for the User Information and interfaces in a national cyberinfrastructure project known as XSEDE. Maytal has been a Co-Principal Investigator on multiple NSF Funded projects and is currently a Co-Principal Investigator on the Science Gateways Collaborative Institute, a fifteen million dollar NSF funded project to promote and engage Science Gateways. While telecommuting for TACC full time she has risen through the ranks at TACC. Starting as a developer and individual contributor to projects Maytal has grown to lead multiple projects as a technical lead. Now, Maytal serves the director of her department and a lead for multiple projects. Maytal is passionate about enabling science through the use of technology such as Science Gateways to make science more accessible. Maytal has also spoken at multiple conferences including Grace Hopper and SXSW Interactive and giving technical talks, leading Birds of a Feather sessions, and conducting panels and meet-ups.",
+    pronoun="she/her/hers",
+    photo="static/imgs/speakers/maytal.jpg",
     )
-james1.add_talk(
-    title="Andriod Things & Stuff 2",
-    description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Green Area",
-    time="3:00pm",
-    date=date,
-    )
-
-################################################################################
-
-jessica3 = Speaker(
-    first_name="Jessica",
-    last_name="Earley",
-    )
-jessica3.add_social_media(
-    twitter="chatasweetie",
-    linkedin="https://www.linkedin.com/in/jessicaearley/",
-    website="https://chatasweetie.com",
-    youtube="https://www.youtube.com/channel/UCmAIHsNUyAzJ6FQMdU5jdRw",
-    facebook="https://www.facebook.com/jessica.d.earley",
-    google_plus="http://google.com/+JessicaEarleyChatasweetie",
-    )
-jessica3.add_professional_information(
-    profession="Software Instructor",
-    empolyeer="Girl Develop, It",
-    )
-jessica3.add_personal(
-    bio="Jessica Dene Earley-Cha is from Calexico, CA and received her bachelor's in Sociology, Education: Applied Psychology from UCSB. She spent almost a decade working with at-risk youth with mental health challenges in disadvantaged areas. Jessica decided to follow her passion of coding and graduated from a software Boot Camp.  She is full stack developer who enjoys sharing knowledge and support others. Jessica is the co-organizer for Google Developers Group San Francisco, is a Women Techmakers lead, teacher for Girl Develop It, active with  Latinxs in Tech and co-creator of DevelopHerDevelopHim. You'll find her either listening to other's life stories or coding one of her many personal projects.",
-    pronoun="she/her",
-    photo="https://chatasweetie.files.wordpress.com/2015/10/jessica-short.png?w=300&h=317",
-    )
-jessica3.add_talk(
-    title="A really long title that goes over the assigned thingy",
-    description="Information about Celery Talk 3",
-    track_name="Blue Area",
-    time="2:00pm",
-    date=date,
-    )
-
-
-################################################################################
-
-
-jane3 = Speaker(
-    first_name="Jane",
-    last_name="Villaneuva",
-    )
-jane3.add_social_media(
-    twitter=None,
-    linkedin=None,
-    website=None,
-    youtube=None,
-    facebook=None,
-    google_plus=None,
-    )
-jane3.add_professional_information(
-    profession="Software Developer",
-    empolyeer="UberMelon",
-    )
-jane3.add_personal(
-    bio="Jane is amazing developer",
-    pronoun="she/her",
-    photo="https://cannabisnow.com/wp-content/uploads/2016/10/JaneWest.jpg",
-    )
-jane3.add_talk(
-    title="Andriod Things & Stuff 3",
-    description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Blue Area",
-    time="1:00pm",
-    date=date,
-    )
-
-
-################################################################################
-
-
-james3 = Speaker(
-    first_name="James",
-    last_name="Cha-Earley",
-    )
-james3.add_social_media(
-    twitter=None,
-    linkedin="https://www.linkedin.com/in/jamesjcha/",
-    website=None,
-    youtube=None,
-    facebook=None,
-    google_plus=None,
-    )
-james3.add_professional_information(
-    profession="Software Developer",
-    empolyeer="Clover",
-    )
-james3.add_personal(
-    bio="James is a great person.",
-    pronoun="he/him",
-    photo="data:image/jpeg;base64,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",
-    )
-james3.add_talk(
-    title="Andriod Things & Stuff 3",
-    description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Yellow Area",
-    time="3:00pm",
-    date=date,
+maytal.add_talk(
+    title="Pants Not Required: Telecommuting Like A Boss",
+    description="Interested in becoming a successful telecommuter? Telecommuting now and want strategies to succeed? This session will teach you strategies for how to pitch telecommuting to your boss, ideas on being more productive, and making sure that you are just as seen and heard as an employee in the office. How can I be a productive telecommuter and prove it to my boss? What are the common pitfalls and misconceptions of telecommuting and how can I avoid and combat them? Learn how to be a remote employee that rocks and techniques for how to effectively manage people and projects remotely.",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Professional",
     )
 
 ################################################################################
 
-jessica4 = Speaker(
-    first_name="Jessica",
-    last_name="Earley-Cha",
-    )
-jessica4.add_social_media(
-    twitter="chatasweetie",
-    linkedin="https://www.linkedin.com/in/jessicaearley/",
-    website="https://chatasweetie.com",
-    youtube="https://www.youtube.com/channel/UCmAIHsNUyAzJ6FQMdU5jdRw",
-    facebook="https://www.facebook.com/jessica.d.earley",
-    google_plus="http://google.com/+JessicaEarleyChatasweetie",
-    )
-jessica4.add_professional_information(
-    profession="Software Instructor",
-    empolyeer="Girl Develop, It",
-    )
-jessica4.add_personal(
-    bio="Jessica Dene Earley-Cha is from Calexico, CA and received her bachelor's in Sociology, Education: Applied Psychology from UCSB. She spent almost a decade working with at-risk youth with mental health challenges in disadvantaged areas. Jessica decided to follow her passion of coding and graduated from a software Boot Camp.  She is full stack developer who enjoys sharing knowledge and support others. Jessica is the co-organizer for Google Developers Group San Francisco, is a Women Techmakers lead, teacher for Girl Develop It, active with  Latinxs in Tech and co-creator of DevelopHerDevelopHim. You'll find her either listening to other's life stories or coding one of her many personal projects.",
-    pronoun="she/her",
-    photo="https://chatasweetie.files.wordpress.com/2015/10/jessica-short.png?w=300&h=317",
-    )
-jessica4.add_talk(
-    title="Celery 4",
-    description="Information about Celery Talk 3",
-    track_name="Blue Area",
-    time="1:00pm",
-    date=date,
-    )
 
-
-################################################################################
-
-
-jane4 = Speaker(
-    first_name="Jane",
-    last_name="Villa",
+vr = Speaker(
+    first_name="Brittany Mennuti,",
+    last_name="Joanna and Ali",
     )
-jane4.add_social_media(
+vr.add_social_media(
     twitter=None,
     linkedin=None,
     website=None,
@@ -395,71 +462,43 @@ jane4.add_social_media(
     facebook=None,
     google_plus=None,
     )
-jane4.add_professional_information(
-    profession="Software Developer",
-    empolyeer="UberMelon",
+vr.add_professional_information(
+    profession="Machine Learning Engineer",
+    empolyeer=None,
     )
-jane4.add_personal(
-    bio="Jane is amazing developer",
-    pronoun="she/her",
-    photo="https://cannabisnow.com/wp-content/uploads/2016/10/JaneWest.jpg",
+vr.add_personal(
+    bio=None,
+    pronoun=None,
+    photo="static/imgs/speakers/shruti.jpg",
     )
-jane4.add_talk(
-    title="Andriod Things & Stuff 4",
-    description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Blue Area",
-    time="10:00am",
-    date=date,
+vr.add_talk(
+    title=None,
+    description=None,
+    track_name=None,
+    time=None,
+    date=None,
+    category=None,
     )
 
 
-################################################################################
 
 
-james4 = Speaker(
-    first_name="James",
-    last_name="Cha-Earley",
-    )
-james4.add_social_media(
-    twitter=None,
-    linkedin="https://www.linkedin.com/in/jamesjcha/",
-    website=None,
-    youtube=None,
-    facebook=None,
-    google_plus=None,
-    )
-james4.add_professional_information(
-    profession="Software Developer",
-    empolyeer="Clover",
-    )
-james4.add_personal(
-    bio="James is a great person.",
-    pronoun="he/him",
-    photo="data:image/jpeg;base64,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",
-    )
-james4.add_talk(
-    title="Andriod Things & Stuff 4",
-    description="A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.A super long description.",
-    track_name="Yellow Area",
-    time="10:00am",
-    date=date,
-    )
 ################################################################################
 ###############Add Speaker objects to Speakers List#############################
 ################################################################################
 speakers_data = [
-    jessica,
-    jane,
-    james,
-    jane1,
-    jessica1,
-    james1,
-    jane3,
-    jessica3,
-    james3,
-    jane4,
-    jessica4,
-    james4,
+    # linda,
+    audrey,
+    meredith,
+    dobs,
+    shruti,
+    sarah,
+    chloe,
+    deborah,
+    wendy,
+    kristi,
+    # irana,
+    # maytal,
     ]
 
 
@@ -481,13 +520,19 @@ for name in track_names:
         talks[name] = range(len(session_times))
 
 
+colors = ["blue-op", "green-op"]
+color_num = 0
+
 for speaker in speakers_data:
+    if color_num > 1:
+        color_num = 0
+    speaker.color = colors[color_num]
+    color_num += 1
     print speaker.talk.slot.get("track_name")
     if speaker.talk.slot.get("track_name") is None:
         missing_data_talks.append(speaker.talk)
         continue
     talks[speaker.talk.slot.get("track_name")][order_of_sessions[speaker.talk.slot.get("time")]] = speaker.talk
-
 
 colors = ["blue", "green", "dark-green", "dark-blue"]
 
@@ -514,11 +559,11 @@ def selects_four_random_speakers(speakers_data):
     random_nums = []
 
     for num in range(4):
-        random_num = randint(0, 11)
+        random_num = randint(0, (len(speakers_data) - 1))
         print random_num
         while random_num in random_nums:
-            random_num = randint(0,11)
+            random_num = randint(0, (len(speakers_data) - 1))
         random_nums.append(random_num)
     random_speakers = [speakers_data[random_nums[0]], speakers_data[random_nums[1]], speakers_data[random_nums[2]], speakers_data[random_nums[3]]]
-    print random_nums
+
     return random_speakers

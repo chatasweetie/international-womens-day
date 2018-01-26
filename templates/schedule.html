@@ -21,10 +21,7 @@
       <i class="fa fa-laptop" aria-hidden="true"></i> Technology Session
     </div>
     <div class="col center-text">
-      <i class="fa fa-briefcase" aria-hidden="true"></i> Professional Session
-    </div>
-    <div class="col center-text">
-      <i class="fa fa-user" aria-hidden="true"></i></i> Personal Session
+      <i class="fa fa-briefcase" aria-hidden="true"></i> Professional/Personal Session
     </div>
     <div class="col-md-1"></div>
   </div>
@@ -56,9 +53,6 @@
               <i class="fa fa-laptop" aria-hidden="true"></i>
             {% endif %}
             {% if talks[track][session_num].category  == "Professional" %}
-              <i class="fa fa-briefcase" aria-hidden="true"></i>
-            {% endif %}
-            {% if talks[track][session_num].category  == "Personal" %}
               <i class="fa fa-user" aria-hidden="true"></i>
             {% endif %}
             </p>
@@ -123,7 +117,6 @@
       </h6>
     </div>
   </div>
-
 
 
 

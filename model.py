@@ -94,7 +94,7 @@ class Talk(object):
     """This is a Speaker's Session"""
 
     def __init__(self, title, description, track_name=None, time=None, speaker=None, date=None, session_length=None, category=None):
-        self.title = title.capitalize()
+        self.title = title
         self.description = description
         self.category = category
 
@@ -105,6 +105,7 @@ class Talk(object):
 
         else: 
             calendar_datetime = None
+
         self.slot = {
                     "track_name": track_name,
                     "time": time,

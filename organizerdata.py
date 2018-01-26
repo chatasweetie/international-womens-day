@@ -43,7 +43,7 @@ james = Organizer(
     last_name="Cha-Earley",
     )
 james.add_social_media(
-    twitter="https://twitter.com/theJamesCha",
+    twitter="theJamesCha",
     linkedin="https://www.linkedin.com/in/jamesjcha/",
     website=None,
     youtube=None,
@@ -73,8 +73,8 @@ rubi = Organizer(
     last_name="Martinez",
     )
 rubi.add_social_media(
-    twitter=None,
-    linkedin=None,
+    twitter="Rubee__",
+    linkedin="https://www.linkedin.com/in/mitzirubimartinez/",
     website=None,
     youtube=None,
     facebook=None,
@@ -87,7 +87,7 @@ rubi.add_professional_information(
 rubi.add_personal(
     bio=None,
     pronoun=None,
-    photo=None,
+    photo="static/imgs/organizers/rubi.jpg",
     )
 rubi.add_committee_info(
     roles=None,
@@ -103,9 +103,9 @@ frances = Organizer(
     last_name="Liu",
     )
 frances.add_social_media(
-    twitter=None,
-    linkedin=None,
-    website=None,
+    twitter="frances_codes",
+    linkedin="https://linkin.com/in/frances-liu",
+    website="http://frances.codes",
     youtube=None,
     facebook=None,
     google_plus=None,
@@ -117,7 +117,7 @@ frances.add_professional_information(
 frances.add_personal(
     bio=None,
     pronoun=None,
-    photo=None,
+    photo="https://media.licdn.com/media/AAEAAQAAAAAAAAzwAAAAJGJlYjUyOWM1LTBmYTUtNDU2My1hOWZkLWQwMDRkZWU2NmMzOA.jpg",
     )
 frances.add_committee_info(
     roles=None,
@@ -133,9 +133,9 @@ natalie = Organizer(
     last_name="Serebryakova",
     )
 natalie.add_social_media(
-    twitter=None,
-    linkedin=None,
-    website=None,
+    twitter="itechgirly",
+    linkedin="https://www.linkedin.com/in/natalieserebry/",
+    website="http://01101110.com/",
     youtube=None,
     facebook=None,
     google_plus=None,
@@ -147,7 +147,7 @@ natalie.add_professional_information(
 natalie.add_personal(
     bio=None,
     pronoun=None,
-    photo=None,
+    photo="static/imgs/organizers/natalie.jpg",
     )
 natalie.add_committee_info(
     roles=None,
@@ -164,7 +164,7 @@ nancy = Organizer(
     )
 nancy.add_social_media(
     twitter=None,
-    linkedin=None,
+    linkedin="https://www.linkedin.com/in/nancy-tran-339092a/",
     website=None,
     youtube=None,
     facebook=None,
@@ -176,8 +176,8 @@ nancy.add_professional_information(
     )
 nancy.add_personal(
     bio=None,
-    pronoun=None,
-    photo=None,
+    pronoun="She, her, hers",
+    photo="static/imgs/organizers/nancy.jpg",
     )
 nancy.add_committee_info(
     roles=None,
@@ -254,8 +254,8 @@ diana = Organizer(
     )
 diana.add_social_media(
     twitter=None,
-    linkedin=None,
-    website=None,
+    linkedin="https://www.linkedin.com/in/dflee/",
+    website="http://dflee.io/",
     youtube=None,
     facebook=None,
     google_plus=None,
@@ -267,7 +267,7 @@ diana.add_professional_information(
 diana.add_personal(
     bio=None,
     pronoun=None,
-    photo=None,
+    photo="static/imgs/organizers/diana.jpg",
     )
 diana.add_committee_info(
     roles=None,
@@ -283,11 +283,11 @@ queenie = Organizer(
     last_name="Ho",
     )
 queenie.add_social_media(
-    twitter=None,
-    linkedin=None,
+    twitter="q_ho",
+    linkedin="https://www.linkedin.com/in/queenieho/",
     website=None,
     youtube=None,
-    facebook=None,
+    facebook="https://www.facebook.com/hoiyho5",
     google_plus=None,
     )
 queenie.add_professional_information(
@@ -297,7 +297,7 @@ queenie.add_professional_information(
 queenie.add_personal(
     bio=None,
     pronoun=None,
-    photo=None,
+    photo="static/imgs/organizers/queenie.png",
     )
 queenie.add_committee_info(
     roles=None,
@@ -313,9 +313,9 @@ ro = Organizer(
     last_name="Rose",
     )
 ro.add_social_media(
-    twitter=None,
-    linkedin=None,
-    website=None,
+    twitter="FeminismTech",
+    linkedin="http://www.linkedin.com/in/aroseartist",
+    website="http://www.aroseartist.com/showcase/",
     youtube=None,
     facebook=None,
     google_plus=None,
@@ -327,28 +327,122 @@ ro.add_professional_information(
 ro.add_personal(
     bio=None,
     pronoun=None,
-    photo=None,
+    photo="http://www.aroseartist.com/wp-content/uploads/2017/02/LR_headshot.jpg",
     )
 ro.add_committee_info(
     roles=None,
     gdg_name="",
     gdg_role="",
     )
+
+################################################################################
+
+
+patti = Organizer(
+    first_name="Patti",
+    last_name="Shin",
+    )
+patti.add_social_media(
+    twitter="pattishin",
+    linkedin="https://www.linkedin.com/in/pattishin/",
+    website=None,
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+patti.add_professional_information(
+    profession="Front-end Software Engineer",
+    empolyeer="Restless Bandit",
+    )
+patti.add_personal(
+    bio=None,
+    pronoun=None,
+    photo="static/imgs/organizers/patti.png",
+    )
+patti.add_committee_info(
+    roles=None,
+    gdg_name="",
+    gdg_role="",
+    )
+
+################################################################################
+
+
+linda = Organizer(
+    first_name="Linda",
+    last_name="Peng",
+    )
+linda.add_social_media(
+    twitter="lpnotes",
+    linkedin=None,
+    website="http://lindapeng.com",
+    youtube=None,
+    facebook="https://www.facebook.com/lpnotes",
+    google_plus=None,
+    )
+linda.add_professional_information(
+    profession="Developer",
+    empolyeer="We Also Walk Dogs",
+    )
+linda.add_personal(
+    bio=None,
+    pronoun=None,
+    photo="https://media.licdn.com/media/AAEAAQAAAAAAAAnHAAAAJDYzN2RkOTk5LTU0YmEtNDUwMS05Y2MwLWFkOTI4ZmUwZjViZA.jpg",
+    )
+linda.add_committee_info(
+    roles=None,
+    gdg_name="",
+    gdg_role="",
+    )
+
+################################################################################
+
+andres = Organizer(
+    first_name="Andres",
+    last_name="Pineda",
+    )
+andres.add_social_media(
+    twitter=None,
+    linkedin="https://www.linkedin.com/in/andres-p",
+    website=None,
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+andres.add_professional_information(
+    profession="Junior Software Engineer",
+    empolyeer="Starcity",
+    )
+andres.add_personal(
+    bio=None,
+    pronoun=None,
+    photo="static/imgs/organizers/andres.jpg",
+    )
+andres.add_committee_info(
+    roles=None,
+    gdg_name="",
+    gdg_role="",
+    )
+
+
 ################################################################################
 #         Add Organizer objects to Speakers List                               #
 ################################################################################
 organizers_data = [
     jessica,
-    james,
     rubi,
     frances,
+    ro,
+    patti,
     natalie,
+    linda,
+    james,
+    queenie,
+    diana,
     nancy,
+    andres,
     daphne,
     samantha,
-    diana,
-    queenie,
-    ro,
     ]
 
 ################################################################################

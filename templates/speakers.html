@@ -54,27 +54,27 @@
                     </div>
                     <div class="modal-footer center">
                       {% if speaker.social_media.get("twitter") %}
-                        <a href="https://twitter.com/{{ speaker.social_media.get("twitter") }}">
+                        <a href="https://twitter.com/{{ speaker.social_media.get("twitter") }}" target="_blank">
                           <i class="fa fa-twitter"></i></a>&nbsp;
                       {% endif %}
 
                       {% if speaker.social_media.get("linkedin") %}
-                        <a href="{{ speaker.social_media.get("linkedin") }}">
+                        <a href="{{ speaker.social_media.get("linkedin") }}" target="_blank">
                           <i class="fa fa-linkedin"></i></a>&nbsp;
                       {% endif %}
 
                       {% if speaker.social_media.get("facebook") %}
-                        <a href="{{ speaker.social_media.get("facebook") }}">
+                        <a href="{{ speaker.social_media.get("facebook") }}" target="_blank">
                           <i class="fa fa-facebook"></i></a>&nbsp;
                       {% endif %}
 
                       {% if speaker.social_media.get("google_plus") %}
-                        <a href="{{ speaker.social_media.get("google_plus") }}">
+                        <a href="{{ speaker.social_media.get("google_plus") }}" target="_blank">
                           <i class="fa fa-google-plus"></i></a>&nbsp;
                       {% endif %}
 
                       {% if speaker.social_media.get("website") %}
-                        <a href="{{ speaker.social_media.get("website") }}">
+                        <a href="{{ speaker.social_media.get("website") }}" target="_blank">
                           <i class="fa fa-laptop"></i></a>&nbsp;
                       {% endif %}
                     </div>
