@@ -75,9 +75,10 @@ def schedule():
 def only_talks():
     """Talk Page"""
     print speakers_data
+    _speakers_data = speakers_data[:-1]
 
     return render_template("talks.html",
-                            speaker_data=speakers_data)
+                            speaker_data=_speakers_data)
 
 
 @app.route("/community")
@@ -107,22 +108,11 @@ def faq():
 
     return render_template("faq.html")
 
-############################################################################
-# Error Pages
-# @app.errorhandler(404)
-# def page_not_found(error):
-#     """404 Page Not Found handling"""
+@app.route("/sponsors")
+def sponsors():
+    """Sponsors Page"""
 
-#     return render_template('/errors/404.html'), 404
-
-
-# @app.errorhandler(500)
-# def internal_error(error):
-#     # db.session.rollback()
-#     """500 Error handling """
-
-#     return render_template('/errors/500.html'), 500
-
+    return render_template("sponsors.html")
 
 
 if __name__ == "__main__":

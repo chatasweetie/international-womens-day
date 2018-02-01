@@ -52,6 +52,17 @@
                     <div class="modal-body center-text">
                       {{ speaker.personal_info["bio"] }}
                     </div>
+                     <div class="modal-body center-text"> Talk:
+                      {% if speaker.workaround %}
+                        <a href="/talks#vrpanel">
+                          Google VR Panel
+                        </a>
+                      {% else %}
+                        <a href="/talks#{{ speaker.first_name }}{{ speaker.last_name }}">
+                          {{ speaker.talk.title }}
+                        </a>
+                      {% endif %}
+                    </div>
                     <div class="modal-footer center">
                       {% if speaker.social_media.get("twitter") %}
                         <a href="https://twitter.com/{{ speaker.social_media.get("twitter") }}" target="_blank">

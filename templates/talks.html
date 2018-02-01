@@ -12,7 +12,7 @@
       <h1 class="center subheadings">
         Talks
       </h1>
-      <h4 class="center subheadings"> {{speaker_data|length }} of the 18 talks are listed, more to come</h4>
+      <h4 class="center subheadings"> {{speaker_data|length + 1}} of the 18 talks are listed, more to come</h4>
     </div>
   </div>
 </div>
@@ -34,9 +34,10 @@
       <div class="card-deck">
 
       {% for speaker in speaker_data %}
-      <div class="col-md-6 col-lg-4 card-pad " id="{{ speaker.first_name }}{{ speaker.last_name }}">
+      <div id="{{ speaker.first_name }}{{ speaker.last_name }}"></div>
+      <div class="col-md-6 col-lg-4 link-card-pad">
         <div class="card center-text">
-          <div class="card-block {{ speaker.color}}">
+          <div class="card-block {{ speaker.talk.color}}">
             <p class="session-title session">{{ speaker.talk.title }} 
               {% if speaker.talk.category  == "Technology" %}
                 <i class="fa fa-laptop" aria-hidden="true"></i>
@@ -77,6 +78,48 @@
         </div>
       </div>
       {% endfor %}
+      <!-- VR Talk -->
+      <div id="vrpanel"></div>
+      <div class="col-md-6 col-lg-4 link-card-pad">
+        <div class="card center-text">
+          <div class="card-block blue-op">
+            <p class="session-title session">Google VR Panel
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+            </p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#vrtalk">
+                More info
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="vrtalk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Google VR Panel</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body center-text">
+                      Hear from three women who work in the DayDream (VR) team. They'll share what they do, what they are excited to be working on and a Q&A where you can ask questions to them.
+                    </div>
+                    <div class="modal-footer center">
+                      <small>Panelist: 
+                        <a href="/speakers#BrittanyMennuti">Brittany Mennuti</a>, 
+                       <!--  <a href="/speakers#Joannas">Joanna </a> and 
+                        <a href="/speakers#Alid">Ali </a> --> from DayDream VR Team Google
+                      </small>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
 
       </div>
   </div>

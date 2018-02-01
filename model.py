@@ -53,6 +53,7 @@ class Speaker(Person):
         self.first_name = first_name
         self.last_name = last_name
         self.talk = None
+        self.workaround = None
 
     def add_talk(self, title=None, description=None, track_name=None, time=None, date=None, category=None,):
         _talk = Talk(title=title, description=description, track_name=track_name, time=time, date=date, speaker=self, category=category,)
@@ -90,6 +91,7 @@ class Organizer(Person):
                                 self.last_name,
                                 )
 
+
 class Talk(object):
     """This is a Speaker's Session"""
 
@@ -97,6 +99,7 @@ class Talk(object):
         self.title = title
         self.description = description
         self.category = category
+        self.workaroundid = None
 
         if date is not None and time is not None:
             start = datetime.datetime.strptime("{} {}".format(date, time), '%m/%d/%Y %I:%M%p')

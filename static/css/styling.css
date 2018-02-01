@@ -58,8 +58,8 @@ body {
     padding-bottom: 1%
 }
 
-.kapor-padding{
-    padding-top: 3%;
+.kapor-margin{
+    margin-top: 3%;
 }
 
 /* Homepage */
@@ -173,6 +173,10 @@ h1 {
     padding-top: 1%;
 }
 
+.link-card-pad{
+    padding-top: 4%;
+}
+
 button{
     background: rgb(28, 233,182);
 }
@@ -238,6 +242,7 @@ button{
 
 .blue-op{
     background: rgba(79,195,247,0.7);
+    padding: 10% 0 10% 0;
 }
 
  .green {
@@ -246,6 +251,7 @@ button{
 
  .green-op {
     background: rgba(28,233,182,0.7);
+    padding: 10% 0 10% 0;
  }
 
 .dark-green{
@@ -259,6 +265,7 @@ button{
 .session{
     margin: 0;
 }
+
 
 .session-speaker{
     font-size: 80%
@@ -321,6 +328,9 @@ button{
     }
 }
 
+.link-space{
+    height: 200px;
+}
 
 /* Organizers */
 .modal-content{

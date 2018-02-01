@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ###Above is to find the system's source code encoding
 from model import Speaker, Talk
-from random import randint
+from random import randint, choice
 
 
 
@@ -32,7 +32,8 @@ session_times = [
                 "2:00pm",
                 "3:00pm",
                 "4:00pm",
-                "5:00pm"
+                "5:00pm",
+                "5:30pm",
                 ]
 ################################################################################
 # Add the length of the sessions in minutes                                    #
@@ -47,9 +48,9 @@ session_length = "45"
 
 registration = Talk("Registration & Breakfast", "Get your name badge and enjoy and light breakfast", time="8:30am", track_name="Green Area")
 welcome = Talk("Welcome", "Come together to kick off the day", time="9:30am", track_name="Green Area")
-lunch = Talk("Lunch", "Delicious Food and Connecting with others", time="12:00pm", track_name="Green Area")
+lunch = Talk("Lunch", "Delicious Food and Connecting with others", time="1:00pm", track_name="Green Area")
 closing = Talk("Closing & Raffle", "Join us on wrapping up the day with a raffle and thank yous", time="5:00pm", track_name="Green Area")
-
+networking = Talk("Networking", "Connect with people. Doors close at 6:30pm", time="5:30pm", track_name="Green Area")
 
 ################################################################################
 # Add your Speaker Information                                                 #
@@ -73,13 +74,13 @@ chloe.add_professional_information(
 chloe.add_personal(
     bio="Former musical theatre actress and Hackbright Academy graduate, Chloe is now a Developer Evangelist at Sentry. Pre-Hackbright, she spent her nights and weekends performing in the Bay Area as a singer/actress and worked in tech by day. To support her theatre career, she started to learn to code on her own through online resources. Perhaps the only engineer you'll meet who has been in 'Hairspray', 'Xanadu', and 'Jerry Springer: the Opera'- she is passionate about bringing people with non-traditional backgrounds into the world of tech. If you're trying to place her face, yes- she's the young woman giving the awkward thumbs up in the 'What It's Like to be a Woman at a Tech Conference' article (which she also wrote). A quick Google search of her will provide you with getting started with Docker videos, theatre reviews, tech blogs, and videos of her singing- enjoy!",
     pronoun="She/Her",
-    photo="https://www.devopsdays.org/events/2017-dallas/speakers/chloe-condon-new.jpg",
+    photo="static/imgs/speakers/chloe.png",
     )
 chloe.add_talk(
     title="Logging, and Errors, and Metrics- oh my!",
     description="As engineers, we build pretty cool apps. Once users start using our cool apps... well, we run into the fun process of discovering errors. Keeping track of these issues can get messy, getting alerted is stressful, and measuring it can provide you with an overwhelming amount of information. So, how do we combine all these things to make our cool apps work even better than before? In this talk, we'll dive into logging, errors, and metrics.",
-    track_name="Green Area",
-    time="10:00am",
+    track_name="Blue Area",
+    time="3:00pm",
     date=date,
     category="Technology",
     )
@@ -111,8 +112,8 @@ linda.add_personal(
 linda.add_talk(
     title="React JS for non React developers",
     description="Have you ever wonder if React JS is suitable for your application? Do you already have a Javascript website and are thinking about refactoring? Are you unsure about the benefits or the learning curve of React JS?In this talk I am going to describe the characteristics, benefits and best practices of React JS, the tools and frameworks to build a website and my experience transitioning from a pure Javascript application to a React JS website.",
-    track_name="Blue Area",
-    time="11:00am",
+    track_name="Green Area",
+    time="10:00am",
     date=date,
     category="Technology",
     )
@@ -145,9 +146,9 @@ audrey.add_personal(
 audrey.add_talk(
     title="Blockchain and Cryptocurrencies for Fun and Profit",
     description="What is blockchain and why do we care? How to get started trading crypto and how to safeguard your investments? What are the biggest problems and potential opportunities using this technology? All this and more including trends in the industry and examples in self-sovereign identity, financial services, supply chain, and decentralized apps.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Green Area",
+    time="11:00am",
+    date=date,
     category="Technology",
     )
 
@@ -178,9 +179,9 @@ meredith.add_personal(
 meredith.add_talk(
     title="Try your hand at Design Thinking",
     description="Design Thinking is one of the newest brainstorming techniques that allows you to solve the right problem the first time. How many times have you built an app for your users that isn't quite right and leads to a costly redesign? In software development, maintenance is the costliest part of the cycle. Design thinking enables you to build the right solution for your users to help reduce that cost. Join me as we use design thinking to solve a real problem in this 45-minute session!",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Blue Area",
+    time="11:00am",
+    date=date,
     category="Technology",
     )
 
@@ -211,9 +212,9 @@ sarah.add_personal(
 sarah.add_talk(
     title="A Tour of the JS Ecosystem",
     description="Module bundlers! Package managers! Superscripts! Polyfills! Frameworks galore! There are a multitude of JavaScript-based frameworks and tools that make up the 'JS ecosystem' underpinning modern front-end development. This talk is a guided journey through this exciting, but sometimes overwhelming, landscape. By breaking down the elements of a modern front-end tech stack, calling out the problems they're trying to solve, and giving examples of commonly used libraries, this talk will help front-end enthusiasts of all levels gain a better understanding of what the JS ecosystem is and how it has evolved.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Blue Area",
+    time="10:00am",
+    date=date,
     category="Technology",
     )
 
@@ -244,9 +245,9 @@ shruti.add_personal(
 shruti.add_talk(
     title="Deep Convolutional Neural Networks using TensorFlow and TensorFlow Serving",
     description="TensorFlow is a powerful open-source library from Google for machine intelligence. It is used by researchers, engineers, students, and others. It has been key in the democratization of deep learning across multiple domains. In this talk, Shruti will walk through the process of training an image classification model using TensorFlow in Keras, and then using TensorFlow Serving to serve the model and run prediction on images. After building your own application, Shruti will show how this looks in a real production environment - how the Machine Learning team at VSCO leverages TensorFlow and TensorFlow Serving for real-time image classification.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Green Area",
+    time="2:00pm",
+    date=date,
     category="Technology",
     )
 
@@ -277,9 +278,9 @@ deborah.add_personal(
 deborah.add_talk(
     title="Doomed to Repeat It: Exploring Machine Bias in Computer Vision",
     description="In the case of machine learning, when we do learn from history, we're doomed to repeat it. What do you get when you Google simple concepts like 'hand', 'foot' or 'healthy face'? Well, not a lot of diversity. However, we continue to use such biased media-influenced image datasets to feed the machine learning models that do everything from opening our phone and identifying criminals to recommending makeup.  In this session, I plan to walk through an overview of how computer vision models are created, and why each step of the way is an opportunity to introduce bias that could skew results to favour only some segments of the population. I'll also go over the great work being done at Clarifai and the Algorithmic Justice League to combat machine bias and some strategies being developed to support companies and research groups looking to be more mindful about the ML models they create.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Green Area",
+    time="12:00pm",
+    date=date,
     category="Technology",
     )
 ################################################################################
@@ -309,9 +310,9 @@ dobs.add_personal(
 dobs.add_talk(
     title="I Promise Fun with Asynchronicity - JavaScript Promises ",
     description="We'll explore JavaScript Promises -- what are  Promises, why/why they should be used, and how they differ from callbacks.  We'll construct a Promise together, as well as look at code snippets that make use of popular 'thenables' in the ubiquitous Bluebird Promises library.  I'll highlight common pitfalls and confusions, and close out with what's next in JavaScript for asynchronous calls.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Yellow Area",
+    time="11:00am",
+    date=date,
     category="Technology",
     )
 
@@ -342,9 +343,9 @@ wendy.add_personal(
 wendy.add_talk(
     title="Building Your Career Roadmap",
     description="Life takes us on all kinds of twists and turns, and it's a good idea to check in with yourself and think about what you need to survive and thrive in your career.  In this exercise, you'll create a map of where you've been, what you've learned, what you're good at, and what you want to avoid to get closer to your dream job.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Blue Area",
+    time="12:00pm",
+    date=date,
     category="Professional",
     )
 
@@ -375,9 +376,9 @@ kristi.add_personal(
 kristi.add_talk(
     title="Networking for Those Who Hate Networking Events",
     description="We've all been there: a networking event pops up that seems like a 'good idea' for your career. Why? Because everyone tells us to network, network, network! Go to those events! Practice that elevator speech! Know how to mingle and stand out and dress appropriately and follow up un-annoyingly and get your next dream job from that one person you met that one time! But who said another awkward, uncomfortable networking event is the only solution? Thankfully, there are better ways to make connections. So let's explore them, and find what works best for you.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Blue Area",
+    time="2:00pm",
+    date=date,
     category="Professional",
     )
 
@@ -408,9 +409,9 @@ irana.add_personal(
 irana.add_talk(
     title="Mindful (and creative) Work-Life Integration",
     description="There is no such thing as work-life balance. Every day, either work or family requires just a little bit more attention than the other. Irana can discuss how she uses her 'guiding principles' as a north star to pursue both career and family goals in what we call work-life integration. She can share about her experience at Harvard Business School, where her and her husband attended at the same time and were the first couple to be pregnant and have a child while attending HBS. She set an example and worked with the school to help improve policies for women and families to come. Although Irana is now a top executive at GoDaddy, she still is able to prioritize time with her family and can share tips on how she accomplishes that integration.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Yellow Area",
+    time="3:00pm",
+    date=date,
     category="Professional",
     )
 
@@ -441,20 +442,31 @@ maytal.add_personal(
 maytal.add_talk(
     title="Pants Not Required: Telecommuting Like A Boss",
     description="Interested in becoming a successful telecommuter? Telecommuting now and want strategies to succeed? This session will teach you strategies for how to pitch telecommuting to your boss, ideas on being more productive, and making sure that you are just as seen and heard as an employee in the office. How can I be a productive telecommuter and prove it to my boss? What are the common pitfalls and misconceptions of telecommuting and how can I avoid and combat them? Learn how to be a remote employee that rocks and techniques for how to effectively manage people and projects remotely.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Yellow Area",
+    time="4:00pm",
+    date=date,
     category="Professional",
     )
 
 ################################################################################
 
-
-vr = Speaker(
-    first_name="Brittany Mennuti,",
-    last_name="Joanna and Ali",
+vr = Talk(
+        title="Google VR Panel",
+        description="Hear from three women who work in the DayDream (VR) team. They'll share what they do, what they are excited to be working on and a Q&A where you can ask questions to them.",
+        track_name="Green Area",
+        time="3:00pm",
+        speaker=None,
+        date=date,
+        category="Technology",
     )
-vr.add_social_media(
+
+vr.workaroundid = True
+
+brit = Speaker(
+    first_name="Brittany",
+    last_name="Mennuti",
+    )
+brit.add_social_media(
     twitter=None,
     linkedin=None,
     website=None,
@@ -462,32 +474,77 @@ vr.add_social_media(
     facebook=None,
     google_plus=None,
     )
-vr.add_professional_information(
-    profession="Machine Learning Engineer",
-    empolyeer=None,
+brit.add_professional_information(
+    profession="Product Manager, VR",
+    empolyeer="Google",
     )
-vr.add_personal(
+brit.add_personal(
+    bio="Brittany is a Product Manager VR",
+    pronoun=None,
+    photo="static/imgs/speakers/brit.jpg",
+    )
+brit.talk = vr
+
+###
+joanna = Speaker(
+    first_name="Joanna",
+    last_name="s",
+    )
+joanna.add_social_media(
+    twitter=None,
+    linkedin=None,
+    website=None,
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+joanna.add_professional_information(
+    profession="Product Manager, VR",
+    empolyeer="Google",
+    )
+joanna.add_personal(
     bio=None,
     pronoun=None,
-    photo="static/imgs/speakers/shruti.jpg",
+    photo="static/imgs/speakers/3.png",
     )
-vr.add_talk(
-    title=None,
-    description=None,
-    track_name=None,
-    time=None,
-    date=None,
-    category=None,
+joanna.talk = vr
+
+###
+
+ali = Speaker(
+    first_name="Ali",
+    last_name="d",
     )
+ali.add_social_media(
+    twitter=None,
+    linkedin=None,
+    website=None,
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+ali.add_professional_information(
+    profession="Product Manager, VR",
+    empolyeer="Google",
+    )
+ali.add_personal(
+    bio=None,
+    pronoun=None,
+    photo="static/imgs/speakers/2.png",
+    )
+ali.talk = vr
 
 
-
+vr.speakers = [brit,
+                # joanna,
+                # ali,
+            ]
 
 ################################################################################
 ###############Add Speaker objects to Speakers List#############################
 ################################################################################
 speakers_data = [
-    # linda,
+    linda,
     audrey,
     meredith,
     dobs,
@@ -497,15 +554,18 @@ speakers_data = [
     deborah,
     wendy,
     kristi,
-    # irana,
-    # maytal,
+    irana,
+    maytal,
+    brit,
+    # joanna,
+    # ali,
     ]
 
 
 ################################################################################
 # Below creates the talks, ordered_of_sessions and schedule_color              #
 ################################################################################
-talks={}
+talks = {}
 
 missing_data_talks = []
 
@@ -526,13 +586,17 @@ color_num = 0
 for speaker in speakers_data:
     if color_num > 1:
         color_num = 0
-    speaker.color = colors[color_num]
+    speaker.talk.color = colors[color_num]
     color_num += 1
-    print speaker.talk.slot.get("track_name")
     if speaker.talk.slot.get("track_name") is None:
         missing_data_talks.append(speaker.talk)
         continue
     talks[speaker.talk.slot.get("track_name")][order_of_sessions[speaker.talk.slot.get("time")]] = speaker.talk
+if color_num:
+    vr.color = colors[0]
+else:
+    vr.color = colors[1]
+
 
 colors = ["blue", "green", "dark-green", "dark-blue"]
 
@@ -545,7 +609,7 @@ for track in track_names:
     schedule_color[track] = colors[counter]
     counter += 1
 
-non_talks = [registration, welcome, lunch, closing]
+non_talks = [registration, welcome, lunch, closing, networking]
 
 for n_talk in non_talks:
     talks[n_talk.slot.get("track_name")][order_of_sessions[n_talk.slot.get("time")]] = n_talk
@@ -558,12 +622,14 @@ def selects_four_random_speakers(speakers_data):
 
     random_nums = []
 
-    for num in range(4):
+    random_nums.append(choice([0, 1, 4, 7]))
+
+    for num in range(3):
         random_num = randint(0, (len(speakers_data) - 1))
         print random_num
         while random_num in random_nums:
             random_num = randint(0, (len(speakers_data) - 1))
         random_nums.append(random_num)
-    random_speakers = [speakers_data[random_nums[0]], speakers_data[random_nums[1]], speakers_data[random_nums[2]], speakers_data[random_nums[3]]]
+    random_speakers = [speakers_data[random_nums[2]], speakers_data[random_nums[1]], speakers_data[random_nums[0]], speakers_data[random_nums[3]]]
 
     return random_speakers
