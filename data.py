@@ -591,12 +591,11 @@ for speaker in speakers_data:
     if speaker.talk.slot.get("track_name") is None:
         missing_data_talks.append(speaker.talk)
         continue
-    talks[speaker.talk.slot.get("track_name")][order_of_sessions[speaker.talk.slot.get("time")]] = speaker.talk
+    # talks[speaker.talk.slot.get("track_name")][order_of_sessions[speaker.talk.slot.get("time")]] = speaker.talk
 if color_num:
     vr.color = colors[0]
 else:
     vr.color = colors[1]
-
 
 colors = ["blue", "green", "dark-green", "dark-blue"]
 
@@ -610,6 +609,7 @@ for track in track_names:
     counter += 1
 
 non_talks = [registration, welcome, lunch, closing, networking]
+
 
 for n_talk in non_talks:
     talks[n_talk.slot.get("track_name")][order_of_sessions[n_talk.slot.get("time")]] = n_talk

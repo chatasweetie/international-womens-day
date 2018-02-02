@@ -31,6 +31,10 @@ body {
     border-bottom-right-radius: 5px;
 } 
 
+.ticket-nav:hover{
+    background: rgb(79,195,247);;
+}
+
 .container{
 	height: auto;	
 }
