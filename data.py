@@ -88,30 +88,30 @@ chloe.add_talk(
 
 ################################################################################
 
-linda = Speaker(
-    first_name="Linda",
-    last_name= "Avendano",
+laura = Speaker(
+    first_name="Laura",
+    last_name= "Montoya",
     )
-linda.add_social_media(
-    twitter=None,
-    linkedin="https://www.linkedin.com/in/avendanolinda/",
-    website=None,
+laura.add_social_media(
+    twitter="QuickResolute",
+    linkedin="https://www.linkedin.com/in/lnmontoya/",
+    website="https://www.lauranmontoya.com/",
     youtube=None,
-    facebook=None,
+    facebook="https://www.facebook.com/laura.montoya.biz",
     google_plus=None,
     )
-linda.add_professional_information(
-    profession="Software Developer",
-    empolyeer="Curai",
+laura.add_professional_information(
+    profession="Founder & CEO",
+    empolyeer="Accel.AI",
     )
-linda.add_personal(
-    bio="Linda is a senior engineer with a master's degree in Software Engineering for Carnegie Mellon University. Originally from Mexico City, she has lived in Silicon Valley for the past 8 years. She has worked at Electronic Arts, Sears Holdings and Netflix. Thanks to her ability to do 'non-traditional' networking, she was able to land a great job at Curai, a startup company in the health care space. There, as a first time user of React JS, she has learned some of the best practices and tools used to create React applications.",
-    pronoun="she/her/hers",
-    photo="static/imgs/speakers/linda.png",
+laura.add_personal(
+    bio="Laura is the Founder and Executive Director of Accel.AI, a global Non Profit Institute lowering the barriers to entry in engineering artificial intelligence. She has been described as a natural and versatile leader with a passion for AI, Computer Science, Research, and Psychology. She has a Bachelors of Science in Biology, Physical Science, and Human Development. She jumpstarted her career in software engineering at Intuit revamping their Quickbooks online platform, after completing an intensive bootcamp training program. She is a Director with Women Who Code, a global non-profit dedicated to inspiring women to excel in technology careers. A founder and co-Chair of the Latinx in AI Coalition, and she also founded and maintains a community forum, TechLore, which focuses on literature that addresses empowerment, entrepreneurship, culture, social justice, and inclusion through the lens of technology.",
+    pronoun="She",
+    photo="static/imgs/speakers/laura.jpg",
     )
-linda.add_talk(
-    title="React JS for non React developers",
-    description="Have you ever wonder if React JS is suitable for your application? Do you already have a Javascript website and are thinking about refactoring? Are you unsure about the benefits or the learning curve of React JS?In this talk I am going to describe the characteristics, benefits and best practices of React JS, the tools and frameworks to build a website and my experience transitioning from a pure Javascript application to a React JS website.",
+laura.add_talk(
+    title="New Realities of an Augmented Workforce",
+    description="We are creating a new augmented workforce -  through increased connectivity and alternative realities thanks to AR and VR  magnified by the fourth wave of an industrial revolution led by digitization, big data, internet of things and cognification of everything. In this talk, we'll explore these exponential technological advances by answering the question - What are the new realities of this augmented workforce? We'll wrap up by empowering listeners with strategies they and their companies can implore for a cohesive and sustainable future.",
     track_name="Green Area",
     time="10:00am",
     date=date,
@@ -544,7 +544,7 @@ vr.speakers = [brit,
 ###############Add Speaker objects to Speakers List#############################
 ################################################################################
 speakers_data = [
-    linda,
+    laura,
     audrey,
     meredith,
     dobs,
