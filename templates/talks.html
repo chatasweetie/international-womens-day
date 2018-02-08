@@ -20,10 +20,11 @@
 <div class="container-fuild grey-banner text-darker">
   <div class="row">
     <div class="col center-text offset-md-1">
-      <i class="fa fa-laptop" aria-hidden="true"></i> Technology Session
+      <a href="#" class="filter_link homepage-pop" data-filter="Technology"><i class="fa fa-laptop" aria-hidden="true"></i> Technology Session </a>
     </div>
+      <a href="#" class="filter_link homepage-pop" data-filter="all">All</a> 
     <div class="col center-text">
-      <i class="fa fa-briefcase" aria-hidden="true"></i> Professional/Personal Session
+      <a href="#" class="filter_link homepage-pop" data-filter="Professional"><i class="fa fa-briefcase" aria-hidden="true"></i> Professional/ Personal Session</a>
     </div>
     <div class="col-md-1"></div>
   </div>
@@ -35,7 +36,7 @@
 
       {% for speaker in speaker_data %}
       <div id="{{ speaker.first_name }}{{ speaker.last_name }}"></div>
-      <div class="col-md-6 col-lg-4 link-card-pad">
+      <div class="col-md-6 col-lg-4 link-card-pad {{ speaker.talk.category }}">
         <div class="card center-text">
           <div class="card-block {{ speaker.talk.color}}">
             <p class="session-title session">{{ speaker.talk.title }} 
@@ -80,9 +81,9 @@
       {% endfor %}
       <!-- VR Talk -->
       <div id="vrpanel"></div>
-      <div class="col-md-6 col-lg-4 link-card-pad">
+      <div class="col-md-6 col-lg-4 link-card-pad Technology">
         <div class="card center-text">
-          <div class="card-block green-op">
+          <div class="card-block blue-op">
             <p class="session-title session">Google VR Panel
                 <i class="fa fa-laptop" aria-hidden="true"></i>
             </p>
@@ -129,8 +130,11 @@
 
 
 
-
-
+<script
+  src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script src="/static/js/filtering.js"></script>
 
 
 
