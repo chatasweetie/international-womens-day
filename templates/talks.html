@@ -18,16 +18,19 @@
 </div>
 
 <div class="container-fuild grey-banner text-darker">
-  <div class="row">
-    <div class="col center-text offset-md-1">
-      <a href="#" class="filter_link homepage-pop" data-filter="Technology"><i class="fa fa-laptop" aria-hidden="true"></i> Technology Session </a>
-    </div>
-      <a href="#" class="filter_link homepage-pop" data-filter="all">All</a> 
-    <div class="col center-text">
-      <a href="#" class="filter_link homepage-pop" data-filter="Professional"><i class="fa fa-briefcase" aria-hidden="true"></i> Professional/ Personal Session</a>
+  <div class="row padding-b" data-toggle="buttons">
+      <div class="col center-text offset-md-1">
+        <a href="#" class="filter_link homepage-pop" data-filter="Technology"><label class="btn btn-primary">
+          <input type="checkbox" autocomplete="off"> <i class="fa fa-laptop" aria-hidden="true"></i> Technology Session 
+        </label></a>
+      </div>
+      <div class="col center-text">
+        <a href="#" class="filter_link homepage-pop" data-filter="Professional"><label class="btn btn-primary">
+          <input type="checkbox" autocomplete="off"> <i class="fa fa-briefcase" aria-hidden="true"></i> Professional/ Personal Session
+        </label></a>
+      </div>
     </div>
     <div class="col-md-1"></div>
-  </div>
 </div>
 
   <div class="row">
@@ -36,9 +39,9 @@
 
       {% for speaker in speaker_data %}
       <div id="{{ speaker.first_name }}{{ speaker.last_name }}"></div>
-      <div class="col-md-6 col-lg-4 link-card-pad {{ speaker.talk.category }}">
+      <div class="col-md-6 col-lg-4 link-card-pad">
         <div class="card center-text">
-          <div class="card-block {{ speaker.talk.color}}">
+          <div class="card-block {{ speaker.talk.color}} {{ speaker.talk.category }}">
             <p class="session-title session">{{ speaker.talk.title }} 
               {% if speaker.talk.category  == "Technology" %}
                 <i class="fa fa-laptop" aria-hidden="true"></i>
@@ -83,7 +86,7 @@
       <div id="vrpanel"></div>
       <div class="col-md-6 col-lg-4 link-card-pad Technology">
         <div class="card center-text">
-          <div class="card-block blue-op">
+          <div class="card-block blue-op Technology">
             <p class="session-title session">Google VR Panel
                 <i class="fa fa-laptop" aria-hidden="true"></i>
             </p>
@@ -126,7 +129,7 @@
   </div>
 </div>
 
-
+<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
 
 
