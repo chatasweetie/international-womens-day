@@ -450,6 +450,106 @@ maytal.add_talk(
 
 ################################################################################
 
+desiree = Speaker(
+    first_name="Desiree",
+    last_name="Garcia",
+    )
+desiree.add_social_media(
+    twitter="thedezzie",
+    linkedin="https://www.linkedin.com/in/thedezzie/",
+    website="http://dezzie.webflow.io/",
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+desiree.add_professional_information(
+    profession="Product Designer",
+    empolyeer="IBM Watson",
+    )
+desiree.add_personal(
+    bio="Desiree Garcia is a designer for IBM Watson. She works on Watson Conversation, a product that enables people who are not developers to build, train, and scale conversational interfaces. Before, she worked on the Watson Developer Cloud, helping developers to leverage specific domains of cognitive technology in their software. She is interested in the notion of diverse teams setting precedent with 'emerging AI,' a term she uses to describe a range of current technology that will shape what mature AI looks like someday. Her official background is in psychology research and practice, but she has been tinkering with computers and the web for much longer. Ending up on the Watson design team was unexpected, but makes pretty good sense.",
+    pronoun="she",
+    photo="static/imgs/speakers/desiree.jpg",
+    )
+desiree.add_talk(
+    title="It takes a village to raise a chatbot",
+    description="We will talk about the other people who are building AI today. In my work, I've designed software meant for engineers and computer scientists often end up being used by people who aren't 'technical.' To make an AI work in the real world, it takes a group of people with diverse skillsets and backgrounds-including those whose jobs are affected by it. When we stop thinking about AI being the work of a select group of geniuses, we give ourselves permission to speak up about what we want for our future.",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Technology",
+    )
+
+################################################################################
+
+
+monisha = Speaker(
+    first_name="Monisha",
+    last_name="Edwards",
+    )
+monisha.add_social_media(
+    twitter="monishaedwards",
+    linkedin="https://www.linkedin.com/in/monishaedwards/",
+    website="https://www.monishaedwards.com/",
+    youtube=None,
+    facebook="https://www.facebook.com/iammonishaedwards",
+    google_plus=None,
+    )
+monisha.add_professional_information(
+    profession="Founder and Creative Strategist",
+    empolyeer="Truth Branding Agency",
+    )
+monisha.add_personal(
+    bio="Monisha Edwards is a Creative Strategist, specializing in Branding, User Interface, and User Experience. She received her Bachelors of Science in Marketing from Fresno State University. Monisha started her first company while in college at the tender age of 19 to help her pay for tuition. Monisha was accepted into an exclusive entrepreneurship program at Fresno State University, where she received mentorship, an office space, and other resources to help her grow her first business. She then ventured off into Corporate America as a Marketing Manager for an engineering firm, and is now the founder and Brand Strategist for Truth Branding Agency. She is also the founder of Literacy Fresno, a literacy and literature exchange initiative. Monisha is an active servant of the community, especially Downtown Fresno, and is currently enrolled in Leadership Fresno, a program for community leaders to learn more about their city to improve their surroundings. Monisha entered the world of technology when she quickly discovered that it was her passion. She is a self-taught graphic, web designer, and front-end developer. Monisha has been a featured speaker for Google's Start Up Grind and has been featured in several publications including the Business Journal.",
+    pronoun="she",
+    photo="static/imgs/speakers/monisha.jpg",
+    )
+monisha.add_talk(
+    title="How to Conquer as a UI/UX Designer ",
+    description="Being a woman in the field of technology is hard. It's a male dominated industry. Being a woman UI/UX designer is sometimes even harder. It is important for women to set themselves apart from the stigmas of being a woman in field of design. As a brand strategist, I will give some insight and tips on how women designers can succeed as designers in the world of technology. These tips will include how to brand yourself as a kicka** UI/UX designer, how to put together a killer portfolio, and even how to cultivate resources to help with personal and professional development.",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Professional",
+    )
+
+################################################################################
+
+
+jessica = Speaker(
+    first_name="Jessica",
+    last_name="Parsons",
+    )
+jessica.add_social_media(
+    twitter="verythorough",
+    linkedin="https://www.linkedin.com/in/verythorough/",
+    website="https://www.verythorough.com",
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+jessica.add_professional_information(
+    profession="Documentation Engineer",
+    empolyeer="Netlify",
+    )
+jessica.add_personal(
+    bio="Jessica Parsons has spent half her life teaching, and a quarter of it developing for the web. She now combines those passions as a documentation engineer at Netlify and a teacher for Girl Develop It. Away from a computer screen, she enjoys sewing, fixing things, and enjoying the outdoors with her shiba inus.",
+    pronoun="she/her",
+    photo="static/imgs/speakers/jessica.jpg",
+    )
+jessica.add_talk(
+    title="Buying the Hype: Understanding and Negotiating Stock Offers",
+    description="Companies often justify lower salaries with promises of huge stock returns, but the laws and options are complex, and values are difficult to evaluate against an uncertain future. How do you evaluate the potential and comparability of the offer you've received? What options do you have for negotiating an offer to your advantage, and how can you make the most of it? I'll help you wade through the sea of terms, options, and outcomes so you'll feel prepared to make these choices for yourself when you receive your next equity offer, or in leveraging options you already have.",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Professional",
+    )
+
+
+
+################################################################################
+
 vr = Talk(
         title="Google VR Panel",
         description="Hear from three women who work in the DayDream (VR) team. They'll share what they do, what they are excited to be working on and a Q&A where you can ask questions to them.",
@@ -484,6 +584,7 @@ brit.add_personal(
     photo="static/imgs/speakers/brit.jpg",
     )
 brit.talk = vr
+
 
 ###
 joanna = Speaker(
@@ -547,8 +648,11 @@ speakers_data = [
     laura,
     audrey,
     meredith,
+    monisha,
     dobs,
+    jessica,
     shruti,
+    # desiree,
     sarah,
     chloe,
     deborah,
@@ -622,7 +726,7 @@ def selects_four_random_speakers(speakers_data):
 
     random_nums = []
 
-    random_nums.append(choice([0, 1, 4, 7]))
+    random_nums.append(choice([0, 1, 3, 5, 6, 9]))
 
     for num in range(3):
         random_num = randint(0, (len(speakers_data) - 1))
