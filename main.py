@@ -75,7 +75,7 @@ def schedule():
 def only_talks():
     """Talk Page"""
     print speakers_data
-    _speakers_data = speakers_data[:-1]
+    _speakers_data = speakers_data[:-2]
 
     return render_template("talks.html",
                             speaker_data=_speakers_data)

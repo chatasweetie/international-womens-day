@@ -552,7 +552,7 @@ jessica.add_talk(
 
 vr = Talk(
         title="Google VR Panel",
-        description="Hear from three women who work in the DayDream (VR) team. They'll share what they do, what they are excited to be working on and a Q&A where you can ask questions to them.",
+        description="Hear from women who work in the DayDream (VR) team. They'll share what they do, what they are excited to be working on and a Q&A where you can ask questions to them.",
         track_name="Green Area",
         time="3:00pm",
         speaker=None,
@@ -567,9 +567,9 @@ brit = Speaker(
     last_name="Mennuti",
     )
 brit.add_social_media(
-    twitter=None,
-    linkedin=None,
-    website=None,
+    twitter="britmennuti",
+    linkedin="https://www.linkedin.com/in/britmennuti/",
+    website="https://medium.com/@brittany.mennuti",
     youtube=None,
     facebook=None,
     google_plus=None,
@@ -579,7 +579,7 @@ brit.add_professional_information(
     empolyeer="Google",
     )
 brit.add_personal(
-    bio="Brittany is a Product Manager VR",
+    bio="Brit is a Product Manager on Daydream at Google, where she focuses on building tools to help creative individuals successfully create immersive content. She focuses on building products like Poly, Blocks, and Expeditions. Prior to Google, Brit was a Product Manager at Vine, where she helped to develop creator tools for Vine's community of artists, and a Group Product Manager at Etsy, where she led Ety's Shipping & Order Management team. In her free time she is an avid gardener and dabbles in confectionery experiments.",
     pronoun=None,
     photo="static/imgs/speakers/brit.jpg",
     )
@@ -587,28 +587,28 @@ brit.talk = vr
 
 
 ###
-joanna = Speaker(
-    first_name="Joanna",
-    last_name="s",
+alexandra = Speaker(
+    first_name="Alexandra",
+    last_name="Sofen",
     )
-joanna.add_social_media(
-    twitter=None,
-    linkedin=None,
+alexandra.add_social_media(
+    twitter="alisofine",
+    linkedin="https://www.linkedin.com/in/alexandra-sofen-3775a062/",
     website=None,
     youtube=None,
     facebook=None,
     google_plus=None,
     )
-joanna.add_professional_information(
-    profession="Product Manager, VR",
+alexandra.add_professional_information(
+    profession="Program Manager",
     empolyeer="Google",
     )
-joanna.add_personal(
-    bio=None,
+alexandra.add_personal(
+    bio="Alexandra Sofen is a Program Manager on the Daydream team at Google, focusing on developing and scaling immersive virtual reality and augmented reality experiences and apps such as Blocks and Poly. She is based in New York City and before working at Google, she was a Senior Programming Manager at Etsy acting as a liaison between Etsy's community of 27 million users and staff of over 800 employees. She constantly strives to foster development and retention with the products she manages, bringing communities together through online engagement and in-person events while scaling user bases.",
     pronoun=None,
-    photo="static/imgs/speakers/3.png",
+    photo="static/imgs/speakers/alexandra.jpg",
     )
-joanna.talk = vr
+alexandra.talk = vr
 
 ###
 
@@ -637,7 +637,7 @@ ali.talk = vr
 
 
 vr.speakers = [brit,
-                # joanna,
+                alexandra,
                 # ali,
             ]
 
@@ -661,7 +661,7 @@ speakers_data = [
     irana,
     maytal,
     brit,
-    # joanna,
+    alexandra,
     # ali,
     ]
 
