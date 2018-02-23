@@ -1,8 +1,8 @@
 # International Women's Day 2018
 
-Backend: [Flask](http://flask.pocoo.org/)    
-Frontend: [Bootstrap v4](http://getbootstrap.com/)    
-Hosting: [Google App Engine](https://cloud.google.com/appengine/)    
+Backend: [Flask](http://flask.pocoo.org/)
+Frontend: [Bootstrap v4](http://getbootstrap.com/)
+Hosting: [Google App Engine](https://cloud.google.com/appengine/)
 
 
 ## Table of Contents
@@ -37,7 +37,7 @@ international-womens-day/
 
 Create and enter an isolated Python environment using virtualenv:
 ```
-    virtualenv env 
+    virtualenv env
     source env/bin/activate
 ```
 
@@ -51,7 +51,7 @@ Install dependencies using pip:
 In the project directory, you can run:
 
 ```
-python main.py
+FLASK_APP=main.py FLASK_DEBUG=1 python -m flask run
 ```
 
 ## Build
@@ -63,10 +63,12 @@ gcloud app deploy
 ```
 
 
-Project site: [IWD site](https://watchful-force-155207.appspot.com)
+Project site: [IWD site](www.iwd-sf.org)
 
 ## Contributors
 [Jessica Dene Earley-Cha](https://www.linkedin.com/in/jessicaearley/)
+[Queenie Ho](https://www.linkedin.com/in/queenieho)
+[Andres Pineda](https://www.linkedin.com/in/humbamp123)
 
 ## License
 MIT
