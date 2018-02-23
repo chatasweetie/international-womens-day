@@ -66,8 +66,8 @@ gcloud app deploy
 Project site: [IWD site](www.iwd-sf.org)
 
 ## Contributors
-[Jessica Dene Earley-Cha](https://www.linkedin.com/in/jessicaearley/)
-[Queenie Ho](https://www.linkedin.com/in/queenieho)
+[Jessica Dene Earley-Cha](https://www.linkedin.com/in/jessicaearley/), 
+[Queenie Ho](https://www.linkedin.com/in/queenieho), 
 [Andres Pineda](https://www.linkedin.com/in/humbamp123)
 
 ## License
