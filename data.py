@@ -551,8 +551,8 @@ jessica.add_talk(
 ################################################################################
 
 vr = Talk(
-        title="Google VR Panel",
-        description="Hear from women who work in the DayDream (VR) team. They'll share what they do, what they are excited to be working on and a Q&A where you can ask questions to them.",
+        title="Breaking into Emerging Tech",
+        description="Three women describe their paths to working in immersive computing at Google and answer your questions about career, professional development, and being female thought leaders in an emerging industry.",
         track_name="Green Area",
         time="3:00pm",
         speaker=None,
