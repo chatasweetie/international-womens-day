@@ -186,10 +186,14 @@ button{
 }
 
 .speaker-background{
-    background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/DSC03065.jpg?resize=1570,1047&quality=50");
+    background-image: url("/static/imgs/assests/speakers.png");
     background-size: 100%;
     background-repeat: no-repeat;
     padding-bottom: 5%;
+}
+
+h1#speakersHeadingWhite {
+    color: white;
 }
 
 .speaker-photo{
@@ -320,6 +324,10 @@ button{
     color: white;
 }
 
+h1#talkHeadingWhite {
+    color: white;
+}
+
 .smaller-font{
     font-size: 75%;
 }
@@ -340,6 +348,7 @@ button{
 }
 
 /* FAQ*/
+
 
 .faq-background{
     background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/DSC03065.jpg?resize=1570,1047&quality=50");
