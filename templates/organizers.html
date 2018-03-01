@@ -24,10 +24,10 @@
   </div>
   <div class="row">
     <div class="container">
-      <div class="card-deck">
+      <div class="card-deck center-text">
 
       {% for speaker in organizers_data %}
-      <div class="col-7 col-md-4 col-lg-3 card-pad">
+      <div class="col-10 col-md-4 col-lg-3 card-pad">
         <div class="card center-text {{ speaker.color}}">
           <img class="card-img-top speaker-photo" src= "{{ speaker.personal_info["photo"] }}" alt="{{ speaker.first_name }} {{ speaker.last_name }}">
           <div class="card-block">
@@ -42,17 +42,6 @@
             <p class="card-text session font-weight-bold">
               {{ speaker.committee_info["gdg_name"] }}
             </p>
-            <!-- <p class="card-text session">
-              {% if speaker.committee_info["roles"] %}
-                <ul>
-                  {% for item in speaker.committee_info["roles"] %}
-                  <li>
-                    {{ item }}
-                  </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </p> -->
             <p class="card-text session">
               {% if speaker.social_media.get("twitter") %}
                 <a href="https://twitter.com/{{ speaker.social_media.get("twitter") }}" target="_blank">
