@@ -9,9 +9,10 @@ from random import randint, choice
 # Add your track names (it can be as little as 1 to as many as 6)              #
 ################################################################################
 track_names = [
-            "Green Area",
             "Blue Area",
             "Yellow Area",
+            "Green Area",
+            "Purple Area"
             ]
 
 ################################################################################
@@ -46,11 +47,11 @@ session_length = "45"
 # Non Speaker Events                                                 #
 ################################################################################
 
-registration = Talk("Registration & Breakfast", "Get your name badge and enjoy and light breakfast", time="8:30am", track_name="Green Area")
-welcome = Talk("Welcome", "Come together to kick off the day", time="9:30am", track_name="Green Area")
-lunch = Talk("Lunch", "Delicious Food and Connecting with others", time="1:00pm", track_name="Green Area")
-closing = Talk("Closing & Raffle", "Join us on wrapping up the day with a raffle and thank yous", time="5:00pm", track_name="Green Area")
-networking = Talk("Networking", "Connect with people. Doors close at 6:30pm", time="5:30pm", track_name="Green Area")
+registration = Talk("Registration & Breakfast", "Get your name badge and enjoy and light breakfast", time="8:30am", track_name="Blue Area")
+welcome = Talk("Welcome", "Come together to kick off the day", time="9:30am", track_name="Blue Area")
+lunch = Talk("Lunch", "Delicious Food and Connecting with others", time="1:00pm", track_name="Blue Area")
+closing = Talk("Closing & Raffle", "Join us on wrapping up the day with a raffle and thank yous", time="5:00pm", track_name="Blue Area")
+networking = Talk("Networking", "Connect with people. Doors close at 6:30pm", time="5:30pm", track_name="Blue Area")
 
 ################################################################################
 # Add your Speaker Information                                                 #
@@ -342,7 +343,7 @@ wendy.add_personal(
     )
 wendy.add_talk(
     title="Building Your Career Roadmap",
-    description="Life takes us on all kinds of twists and turns, and it's a good idea to check in with yourself and think about what you need to survive and thrive in your career.  In this exercise, you'll create a map of where you've been, what you've learned, what you're good at, and what you want to avoid to get closer to your dream job.",
+    description="What's your purpose in your career?  What are you good at, and what motivates you?  You may be thinking about skills you need to develop to move into a leadership role in the future, or how to be a better communicator.  In this career road mapping exercise, we'll reflect on what you need to not only survive but thrive in your career, by identifying strengths, skills, values, and goals to take your career to the next level.",
     track_name="Blue Area",
     time="12:00pm",
     date=date,
@@ -450,34 +451,34 @@ maytal.add_talk(
 
 ################################################################################
 
-desiree = Speaker(
-    first_name="Desiree",
-    last_name="Garcia",
+sarah_h = Speaker(
+    first_name="Sarah",
+    last_name="Harvey",
     )
-desiree.add_social_media(
-    twitter="thedezzie",
-    linkedin="https://www.linkedin.com/in/thedezzie/",
-    website="http://dezzie.webflow.io/",
+sarah_h.add_social_media(
+    twitter="worldwise001",
+    linkedin="https://www.linkedin.com/in/shharvey/",
+    website="https://www.shh.sh",
     youtube=None,
     facebook=None,
     google_plus=None,
     )
-desiree.add_professional_information(
-    profession="Product Designer",
-    empolyeer="IBM Watson",
+sarah_h.add_professional_information(
+    profession="Software Engineer - Security",
+    empolyeer="Square Inc",
     )
-desiree.add_personal(
-    bio="Desiree Garcia is a designer for IBM Watson. She works on Watson Conversation, a product that enables people who are not developers to build, train, and scale conversational interfaces. Before, she worked on the Watson Developer Cloud, helping developers to leverage specific domains of cognitive technology in their software. She is interested in the notion of diverse teams setting precedent with 'emerging AI,' a term she uses to describe a range of current technology that will shape what mature AI looks like someday. Her official background is in psychology research and practice, but she has been tinkering with computers and the web for much longer. Ending up on the Watson design team was unexpected, but makes pretty good sense.",
-    pronoun="she",
-    photo="static/imgs/speakers/desiree.jpg",
+sarah_h.add_personal(
+    bio="Sarah is a software engineer at Square, broadly working on designing and engineering solutions to security infrastructure and security data problems. She has a strong interest in data security/privacy problems. She has given a few talks on security/privacy in the past, including running a highly popular CTF workshop at Grace Hopper 2017.",
+    pronoun="she/her/hers",
+    photo="static/imgs/speakers/sarah-h.jpg",
     )
-desiree.add_talk(
-    title="It takes a village to raise a chatbot",
-    description="We will talk about the other people who are building AI today. In my work, I've designed software meant for engineers and computer scientists often end up being used by people who aren't 'technical.' To make an AI work in the real world, it takes a group of people with diverse skillsets and backgrounds-including those whose jobs are affected by it. When we stop thinking about AI being the work of a select group of geniuses, we give ourselves permission to speak up about what we want for our future.",
+sarah_h.add_talk(
+    title="The (Security-Centric) Woman's Guide to the Galaxy",
+    description="DON'T PANIC. Being a woman on the internet can be scary. Being a famous woman on the internet can be dangerous. In between threats of doxxing and major breaches, how can we safely navigate the increasingly interconnected world without fear? In this talk we discuss why security/privacy is important in the modern age, in addition to: how your data gets shared; how to curtail the spread of personal data; how to secure your accounts; and how to perform a threat modeling exercise for hackers interested in you and your data.",
     track_name=None,
     time=None,
     date=None,
-    category="Technology",
+    category="Professional",
     )
 
 ################################################################################
@@ -507,9 +508,9 @@ monisha.add_personal(
 monisha.add_talk(
     title="How to Conquer as a UI/UX Designer ",
     description="Being a woman in the field of technology is hard. It's a male dominated industry. Being a woman UI/UX designer is sometimes even harder. It is important for women to set themselves apart from the stigmas of being a woman in field of design. As a brand strategist, I will give some insight and tips on how women designers can succeed as designers in the world of technology. These tips will include how to brand yourself as a kicka** UI/UX designer, how to put together a killer portfolio, and even how to cultivate resources to help with personal and professional development.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Yellow Area",
+    time="10:00am",
+    date=date,
     category="Professional",
     )
 
@@ -540,12 +541,120 @@ jessica.add_personal(
 jessica.add_talk(
     title="Buying the Hype: Understanding and Negotiating Stock Offers",
     description="Companies often justify lower salaries with promises of huge stock returns, but the laws and options are complex, and values are difficult to evaluate against an uncertain future. How do you evaluate the potential and comparability of the offer you've received? What options do you have for negotiating an offer to your advantage, and how can you make the most of it? I'll help you wade through the sea of terms, options, and outcomes so you'll feel prepared to make these choices for yourself when you receive your next equity offer, or in leveraging options you already have.",
+    track_name="Yellow Area",
+    time="12:00pm",
+    date=date,
+    category="Professional",
+    )
+
+################################################################################
+
+
+mary = Speaker(
+    first_name="Mary",
+    last_name="Fox",
+    )
+mary.add_social_media(
+    twitter="maryfox20",
+    linkedin="https://linkedin.com/in/marybfox",
+    website="https://getmarlow.com",
+    youtube=None,
+    facebook="https://www.facebook.com/maryfox20",
+    google_plus=None,
+    )
+mary.add_professional_information(
+    profession="Founder / CEO ",
+    empolyeer="Marlow",
+    )
+mary.add_personal(
+    bio="Mary Fox is the co-founder and CEO of Marlow, a career management platform offering executive style career coaching via chat. Prior to launching Marlow, Mary served as the Head of Product Marketing and People Operations at FR8Star. With more than 8 years of experience in people operations, employee engagement, recruitment, and business operations, Mary has dedicated her career to helping individuals and companies make progress toward their goals more quickly and effectively. Mary holds a Master's of Science in Management, Organisations and Governance from the London School of Economics and Political Science.",
+    pronoun="She / Her ",
+    photo="static/imgs/speakers/mary.jpg",
+    )
+mary.add_talk(
+    title="Feedback: the secret weapon to springboard your career",
+    description="Well structured feedback helps build stronger professional relationships, enhances productivity of your team, demonstrates leadership potential and can create a culture of trust. When we ask for feedback, we demonstrate a desire to grow while gaining a better perception of how others perceive our actions. When we provide well-structured feedback to those around us, we enable them to grow while also enhancing the productivity of the team. This talk walks you through how to use feedback as a resource to shape your personal growth, work environment, and work relationships. ",
     track_name=None,
     time=None,
     date=None,
     category="Professional",
     )
 
+################################################################################
+
+
+lauren = Speaker(
+    first_name="Lauren",
+    last_name="Werner",
+    )
+lauren.add_social_media(
+    twitter="LPdub",
+    linkedin="https://www.linkedin.com/in/lwerner/",
+    website="https://laurenwerner.com/",
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+lauren.add_professional_information(
+    profession="UX Designer",
+    empolyeer="BlinkUX",
+    )
+lauren.add_personal(
+    bio="As Senior UX Designer at Blink, Lauren is able to seamlessly translate business objectives into imaginative visual concepts. She anticipates client needs based on in-depth understanding of business goals, collaborating to create the best user experience. Lauren is deeply involved in every aspect of the design process including research, strategy, design and development. She works closely with the team to implement best practices and latest trends in UX and design. Lauren has a Bachelor's Degree in Graphic Design as well as a Minor in Business from Northeastern University. With her extensive consulting background in design and business Lauren is an amazing collaborator and is always excited to create strategic and engaging experiences. Lauren is a design geek, and tapas enthusiast. She enjoys making applications and websites that are both functional and beautiful.",
+    pronoun="She",
+    photo="static/imgs/speakers/lauren.jpg",
+    )
+lauren.add_talk(
+    title="Defining Your Minimum Viable Testing (MVT) ",
+    description="""Making assumptions can be the downfall of many a marketer. 
+Think about it: how often have you conducted user research without actually talking to real people?
+All too often we use data to infer what users want without ever asking them firsthand. According to Forrester Research's 2015 Customer Experience Index, 73 percent of businesses cite customer experience as a strategic priority, yet only 1 percent of companies deliver excellent customer experiences.
+This session will equip you with the tools you need to understand your customers and make smarter product decisions though a Minimum Viable Testing (MVT) approach. With a defined MVT you can ensure that you are designing the best possible experience for your users.
+In this session you will learn how to:
+* Myth-bust the idea that research is expensive & delays product development
+* Evaluate and choose the right research method for your project based on where you are in the product lifecycle
+* Define research objectives as well as choose the right audience and tools
+* Plan user research on a budget
+* Collaborate with your core team to organize findings into themes and create actionable insights
+* Effectively communicate research findings and priorities to stakeholders""",
+    track_name=None,
+    time=None,
+    date=None,
+    category="Technology",
+    )
+
+################################################################################
+
+
+girls_who_code = Speaker(
+    first_name="Girls Who",
+    last_name="Code",
+    )
+girls_who_code.add_social_media(
+    twitter=None,
+    linkedin=None,
+    website=None,
+    youtube=None,
+    facebook=None,
+    google_plus=None,
+    )
+girls_who_code.add_professional_information(
+    profession="",
+    empolyeer="",
+    )
+girls_who_code.add_personal(
+    bio=None,
+    pronoun=None,
+    photo="static/imgs/speakers/shruti.jpg",
+    )
+girls_who_code.add_talk(
+    title="Morning Youth Education",
+    description="Lots of cool things",
+    track_name="Blue Area",
+    time="2:00pm",
+    date=date,
+    category="Youth",
+    )
 
 
 ################################################################################
@@ -557,7 +666,7 @@ vr = Talk(
         time="3:00pm",
         speaker=None,
         date=date,
-        category="Technology",
+        category="Professional",
     )
 
 vr.workaroundid = True
@@ -612,11 +721,11 @@ alexandra.talk = vr
 
 ###
 
-ali = Speaker(
-    first_name="Ali",
-    last_name="d",
+kelly = Speaker(
+    first_name="Kelly",
+    last_name="Schaefer",
     )
-ali.add_social_media(
+kelly.add_social_media(
     twitter=None,
     linkedin=None,
     website=None,
@@ -624,21 +733,21 @@ ali.add_social_media(
     facebook=None,
     google_plus=None,
     )
-ali.add_professional_information(
+kelly.add_professional_information(
     profession="Product Manager, VR",
     empolyeer="Google",
     )
-ali.add_personal(
+kelly.add_personal(
     bio=None,
     pronoun=None,
-    photo="static/imgs/speakers/2.png",
+    photo=None,
     )
-ali.talk = vr
+kelly.talk = vr
 
 
-vr.speakers = [brit,
+vr.speakers = [ brit,
                 alexandra,
-                # ali,
+                kelly,
             ]
 
 ################################################################################
@@ -652,17 +761,20 @@ speakers_data = [
     dobs,
     jessica,
     shruti,
-    # desiree,
+    sarah_h,
+    mary,
     sarah,
-    chloe,
     deborah,
+    chloe,
     wendy,
     kristi,
+    lauren,
     irana,
     maytal,
+    # girls_who_code,
     brit,
     alexandra,
-    # ali,
+    kelly,
     ]
 
 
@@ -695,11 +807,11 @@ for speaker in speakers_data:
     if speaker.talk.slot.get("track_name") is None:
         missing_data_talks.append(speaker.talk)
         continue
-    # talks[speaker.talk.slot.get("track_name")][order_of_sessions[speaker.talk.slot.get("time")]] = speaker.talk
+    talks[speaker.talk.slot.get("track_name")][order_of_sessions[speaker.talk.slot.get("time")]] = speaker.talk
 if color_num:
-    vr.color = colors[0]
-else:
     vr.color = colors[1]
+else:
+    vr.color = colors[0]
 
 colors = ["blue", "green", "dark-green", "dark-blue"]
 

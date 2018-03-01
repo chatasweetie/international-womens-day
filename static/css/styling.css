@@ -270,6 +270,11 @@ button{
   padding-bottom: 5%;
 }
 
+.speaker-card{
+  border-color: #4927d8;
+  background-color: rgba(128,0,128,0.1);
+}
+
 .speaker-photo{
   height: auto;
   width: 100%;
@@ -316,7 +321,7 @@ button{
 }
 
 .dark-blue {
-  background-color: rgb(66,133,244);
+  background-color: rgba(66,133,244,.8);
 }
 
 .blue{
@@ -324,7 +329,7 @@ button{
 }
 
 .blue-op{
-  background: rgba(79,195,247,0.7);
+  background: rgba(79,195,247,0.4);
   padding: 10% 0 10% 0;
 }
 
@@ -333,7 +338,7 @@ button{
 }
 
 .green-op {
-  background: rgba(28,233,182,0.7);
+  background: rgba(28,233,182,0.4);
   padding: 10% 0 10% 0;
 }
 
@@ -449,7 +454,7 @@ button{
 /* Filtering Classes */
 
 .schedule-session-highlight{
-  background-color: #FFA27F;
+  background-color: rgba(255,162,127,0.4)
 }
 
 .talk-hidden{
