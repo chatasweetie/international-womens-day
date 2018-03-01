@@ -80,8 +80,8 @@ chloe.add_personal(
 chloe.add_talk(
     title="Logging, and Errors, and Metrics- oh my!",
     description="As engineers, we build pretty cool apps. Once users start using our cool apps... well, we run into the fun process of discovering errors. Keeping track of these issues can get messy, getting alerted is stressful, and measuring it can provide you with an overwhelming amount of information. So, how do we combine all these things to make our cool apps work even better than before? In this talk, we'll dive into logging, errors, and metrics.",
-    track_name="Blue Area",
-    time="3:00pm",
+    track_name="Green Area",
+    time="2:00pm",
     date=date,
     category="Technology",
     )
@@ -113,8 +113,8 @@ laura.add_personal(
 laura.add_talk(
     title="New Realities of an Augmented Workforce",
     description="We are creating a new augmented workforce -  through increased connectivity and alternative realities thanks to AR and VR  magnified by the fourth wave of an industrial revolution led by digitization, big data, internet of things and cognification of everything. In this talk, we'll explore these exponential technological advances by answering the question - What are the new realities of this augmented workforce? We'll wrap up by empowering listeners with strategies they and their companies can implore for a cohesive and sustainable future.",
-    track_name="Green Area",
-    time="10:00am",
+    track_name="Blue Area",
+    time="12:00pm",
     date=date,
     category="Technology",
     )
@@ -147,8 +147,8 @@ audrey.add_personal(
 audrey.add_talk(
     title="Blockchain and Cryptocurrencies for Fun and Profit",
     description="What is blockchain and why do we care? How to get started trading crypto and how to safeguard your investments? What are the biggest problems and potential opportunities using this technology? All this and more including trends in the industry and examples in self-sovereign identity, financial services, supply chain, and decentralized apps.",
-    track_name="Green Area",
-    time="11:00am",
+    track_name="Blue Area",
+    time="10:00am",
     date=date,
     category="Technology",
     )
@@ -180,7 +180,7 @@ meredith.add_personal(
 meredith.add_talk(
     title="Try your hand at Design Thinking",
     description="Design Thinking is one of the newest brainstorming techniques that allows you to solve the right problem the first time. How many times have you built an app for your users that isn't quite right and leads to a costly redesign? In software development, maintenance is the costliest part of the cycle. Design thinking enables you to build the right solution for your users to help reduce that cost. Join me as we use design thinking to solve a real problem in this 45-minute session!",
-    track_name="Blue Area",
+    track_name="Yellow Area",
     time="11:00am",
     date=date,
     category="Technology",
@@ -213,8 +213,8 @@ sarah.add_personal(
 sarah.add_talk(
     title="A Tour of the JS Ecosystem",
     description="Module bundlers! Package managers! Superscripts! Polyfills! Frameworks galore! There are a multitude of JavaScript-based frameworks and tools that make up the 'JS ecosystem' underpinning modern front-end development. This talk is a guided journey through this exciting, but sometimes overwhelming, landscape. By breaking down the elements of a modern front-end tech stack, calling out the problems they're trying to solve, and giving examples of commonly used libraries, this talk will help front-end enthusiasts of all levels gain a better understanding of what the JS ecosystem is and how it has evolved.",
-    track_name="Blue Area",
-    time="10:00am",
+    track_name="Green Area",
+    time="11:00am",
     date=date,
     category="Technology",
     )
@@ -246,7 +246,7 @@ shruti.add_personal(
 shruti.add_talk(
     title="Deep Convolutional Neural Networks using TensorFlow and TensorFlow Serving",
     description="TensorFlow is a powerful open-source library from Google for machine intelligence. It is used by researchers, engineers, students, and others. It has been key in the democratization of deep learning across multiple domains. In this talk, Shruti will walk through the process of training an image classification model using TensorFlow in Keras, and then using TensorFlow Serving to serve the model and run prediction on images. After building your own application, Shruti will show how this looks in a real production environment - how the Machine Learning team at VSCO leverages TensorFlow and TensorFlow Serving for real-time image classification.",
-    track_name="Green Area",
+    track_name="Blue Area",
     time="2:00pm",
     date=date,
     category="Technology",
@@ -279,8 +279,8 @@ deborah.add_personal(
 deborah.add_talk(
     title="Doomed to Repeat It: Exploring Machine Bias in Computer Vision",
     description="In the case of machine learning, when we do learn from history, we're doomed to repeat it. What do you get when you Google simple concepts like 'hand', 'foot' or 'healthy face'? Well, not a lot of diversity. However, we continue to use such biased media-influenced image datasets to feed the machine learning models that do everything from opening our phone and identifying criminals to recommending makeup.  In this session, I plan to walk through an overview of how computer vision models are created, and why each step of the way is an opportunity to introduce bias that could skew results to favour only some segments of the population. I'll also go over the great work being done at Clarifai and the Algorithmic Justice League to combat machine bias and some strategies being developed to support companies and research groups looking to be more mindful about the ML models they create.",
-    track_name="Green Area",
-    time="12:00pm",
+    track_name="Blue Area",
+    time="3:00pm",
     date=date,
     category="Technology",
     )
@@ -311,8 +311,8 @@ dobs.add_personal(
 dobs.add_talk(
     title="I Promise Fun with Asynchronicity - JavaScript Promises ",
     description="We'll explore JavaScript Promises -- what are  Promises, why/why they should be used, and how they differ from callbacks.  We'll construct a Promise together, as well as look at code snippets that make use of popular 'thenables' in the ubiquitous Bluebird Promises library.  I'll highlight common pitfalls and confusions, and close out with what's next in JavaScript for asynchronous calls.",
-    track_name="Yellow Area",
-    time="11:00am",
+    track_name="Green Area",
+    time="12:00pm",
     date=date,
     category="Technology",
     )
@@ -344,8 +344,8 @@ wendy.add_personal(
 wendy.add_talk(
     title="Building Your Career Roadmap",
     description="What's your purpose in your career?  What are you good at, and what motivates you?  You may be thinking about skills you need to develop to move into a leadership role in the future, or how to be a better communicator.  In this career road mapping exercise, we'll reflect on what you need to not only survive but thrive in your career, by identifying strengths, skills, values, and goals to take your career to the next level.",
-    track_name="Blue Area",
-    time="12:00pm",
+    track_name="Yellow Area",
+    time="2:00pm",
     date=date,
     category="Professional",
     )
@@ -377,8 +377,8 @@ kristi.add_personal(
 kristi.add_talk(
     title="Networking for Those Who Hate Networking Events",
     description="We've all been there: a networking event pops up that seems like a 'good idea' for your career. Why? Because everyone tells us to network, network, network! Go to those events! Practice that elevator speech! Know how to mingle and stand out and dress appropriately and follow up un-annoyingly and get your next dream job from that one person you met that one time! But who said another awkward, uncomfortable networking event is the only solution? Thankfully, there are better ways to make connections. So let's explore them, and find what works best for you.",
-    track_name="Blue Area",
-    time="2:00pm",
+    track_name="Green Area",
+    time="10:00am",
     date=date,
     category="Professional",
     )
@@ -411,7 +411,7 @@ irana.add_talk(
     title="Mindful (and creative) Work-Life Integration",
     description="There is no such thing as work-life balance. Every day, either work or family requires just a little bit more attention than the other. Irana can discuss how she uses her 'guiding principles' as a north star to pursue both career and family goals in what we call work-life integration. She can share about her experience at Harvard Business School, where her and her husband attended at the same time and were the first couple to be pregnant and have a child while attending HBS. She set an example and worked with the school to help improve policies for women and families to come. Although Irana is now a top executive at GoDaddy, she still is able to prioritize time with her family and can share tips on how she accomplishes that integration.",
     track_name="Yellow Area",
-    time="3:00pm",
+    time="12:00pm",
     date=date,
     category="Professional",
     )
@@ -475,9 +475,9 @@ sarah_h.add_personal(
 sarah_h.add_talk(
     title="The (Security-Centric) Woman's Guide to the Galaxy",
     description="DON'T PANIC. Being a woman on the internet can be scary. Being a famous woman on the internet can be dangerous. In between threats of doxxing and major breaches, how can we safely navigate the increasingly interconnected world without fear? In this talk we discuss why security/privacy is important in the modern age, in addition to: how your data gets shared; how to curtail the spread of personal data; how to secure your accounts; and how to perform a threat modeling exercise for hackers interested in you and your data.",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Yellow Area",
+    time="3:00pm",
+    date=date,
     category="Professional",
     )
 
@@ -541,8 +541,8 @@ jessica.add_personal(
 jessica.add_talk(
     title="Buying the Hype: Understanding and Negotiating Stock Offers",
     description="Companies often justify lower salaries with promises of huge stock returns, but the laws and options are complex, and values are difficult to evaluate against an uncertain future. How do you evaluate the potential and comparability of the offer you've received? What options do you have for negotiating an offer to your advantage, and how can you make the most of it? I'll help you wade through the sea of terms, options, and outcomes so you'll feel prepared to make these choices for yourself when you receive your next equity offer, or in leveraging options you already have.",
-    track_name="Yellow Area",
-    time="12:00pm",
+    track_name="Green Area",
+    time="3:00pm",
     date=date,
     category="Professional",
     )
@@ -574,9 +574,9 @@ mary.add_personal(
 mary.add_talk(
     title="Feedback: the secret weapon to springboard your career",
     description="Well structured feedback helps build stronger professional relationships, enhances productivity of your team, demonstrates leadership potential and can create a culture of trust. When we ask for feedback, we demonstrate a desire to grow while gaining a better perception of how others perceive our actions. When we provide well-structured feedback to those around us, we enable them to grow while also enhancing the productivity of the team. This talk walks you through how to use feedback as a resource to shape your personal growth, work environment, and work relationships. ",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Blue Area",
+    time="4:00pm",
+    date=date,
     category="Professional",
     )
 
@@ -617,9 +617,9 @@ In this session you will learn how to:
 * Plan user research on a budget
 * Collaborate with your core team to organize findings into themes and create actionable insights
 * Effectively communicate research findings and priorities to stakeholders""",
-    track_name=None,
-    time=None,
-    date=None,
+    track_name="Green Area",
+    time="4:00pm",
+    date=date,
     category="Technology",
     )
 
@@ -662,8 +662,8 @@ girls_who_code.add_talk(
 vr = Talk(
         title="Breaking into Emerging Tech",
         description="Three women describe their paths to working in immersive computing at Google and answer your questions about career, professional development, and being female thought leaders in an emerging industry.",
-        track_name="Green Area",
-        time="3:00pm",
+        track_name="Blue Area",
+        time="11:00am",
         speaker=None,
         date=date,
         category="Professional",
