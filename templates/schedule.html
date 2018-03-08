@@ -29,7 +29,7 @@
       </div>
       <div class="col center-text">
         <a href="#" class="filter_link homepage-pop" data-filter="Youth"><label class="btn btn-primary">
-          <input type="checkbox" autocomplete="off"> <i class="fa fa-laptop" aria-hidden="true"></i> Youth Session 
+          <input type="checkbox" autocomplete="off"> <i class="fa fa-users" aria-hidden="true"></i> Youth Session 
         </label></a>
       </div>
     </div>
@@ -39,7 +39,7 @@
 
 <div class="container text-center padding-b">
   <div class="row row-padding">
-    <div class="col schedule-session dark-blue schedule-title">
+    <div class="col d-none d-sm-block schedule-session dark-blue schedule-title">
       Times
     </div>
     {% for track_name in track_names %}
@@ -61,6 +61,9 @@
             <!-- Category Icons -->
             {% if talks[track][session_num].category  == "Technology" %}
               <i class="fa fa-laptop" aria-hidden="true"></i>
+            {% endif %}
+            {% if talks[track][session_num].category  == "Youth" %}
+              <i class="fa fa-users" aria-hidden="true"></i>
             {% endif %}
             {% if talks[track][session_num].category  == "Professional" %}
               <i class="fa fa-briefcase" aria-hidden="true"></i>

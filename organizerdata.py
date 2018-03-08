@@ -142,7 +142,7 @@ natalie.add_social_media(
     )
 natalie.add_professional_information(
     profession="Software Engineer",
-    empolyeer="VEVO, LLC",
+    empolyeer="Reddit",
     )
 natalie.add_personal(
     bio=None,
