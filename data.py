@@ -882,8 +882,8 @@ kelly = Speaker(
     last_name="Schaefer",
     )
 kelly.add_social_media(
-    twitter=None,
-    linkedin=None,
+    twitter="@kellyschaefer",
+    linkedin="https://www.linkedin.com/in/schaeferkelly/",
     website=None,
     youtube=None,
     facebook=None,
@@ -894,9 +894,9 @@ kelly.add_professional_information(
     empolyeer="Google",
     )
 kelly.add_personal(
-    bio=None,
+    bio="Kelly Schaefer is a Product Manager with the Lens & Daydream teams at Google, focusing on augmented reality. Prior to working at Google, she was a Design Lead at IDEO, where she did everything from prototype a virtual reality physical therapy experience to launch a company that helps the working poor improve access to job opportunities. Kelly has also worked at African Leadership Academy, Bain & Company, and started two companies. She graduated from UPenn and Harvard Business School. ",
     pronoun=None,
-    photo=None,
+    photo="static/imgs/speakers/kelly.jpg",
     )
 kelly.talk = vr
 
