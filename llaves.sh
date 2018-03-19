@@ -1,1 +1,0 @@
-export GOOGLE_MAP_API_KEY="AIzaSyCv_qJB4wZJCAvnUdDRdQv8DHExzFoeCVY"
