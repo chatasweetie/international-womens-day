@@ -36,7 +36,7 @@ def index():
 
     random_speakers = selects_four_random_speakers(speakers_data)
 
-    return render_template("homepage2.html", random_speakers=random_speakers)
+    return render_template("homepage3.html", random_speakers=random_speakers)
 
 
 @app.route("/speakers")

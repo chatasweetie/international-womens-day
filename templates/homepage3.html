@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+<div class="over container-fluid rectangle">
+    <div class="my-5 container">
+        <img src="/static/imgs/assests/page-1.svg" class="img-fluid homepage-img">
+    </div>
+    <div class="mx-auto text-center ticket-nav">
+        <a class="get-tickets" target="_blank" href="https://www.eventbrite.com/e/iwd-celebrating-women-in-tech-tickets-42215850746">Sold Out!
+        </a>
+    </div>
+</div>
+<div class="container-fluid my-5 center-text">
+    <div>
+        <div class="center-text">
+            <h1 id="title"> Celebrating Women in Tech </h1>
+        </div>
+        <div class="container-fluid container-text">
+            <p class="center-text">
+                IWD is a large, community-run event that offers speaker sessions on Technology and
+                Professional & Personal Development. It is an event that is targeted at developers and
+                tech enthusiasts who are powered by a shared belief that when we come together
+                to exchange ideas amazing things can happen. The speakers will be women and
+                non-binary people in tech who want to inspire, educate and connect!
+            </p>
+        </div>
+        <div class="col">
+            <iframe src="https://albumizr.com/a/ZvVM" scrolling="no" frameborder="0" allowfullscreen width="800" height="500"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Highlight Speakers -->
+<div class="container-fuild speakers">
+    <div class="row padding-top">
+        {% for speaker in random_speakers %}
+        <div class="center-text col-md col-lg">
+            <a href="/speakers#{{ speaker.first_name }}{{ speaker.last_name }}">
+                <img class="img-thumbnail random-speaker" src= "{{ speaker.personal_info["photo"] }}" alt="{{ speaker.first_name }} {{ speaker.last_name }}">
+                <h6>
+                    <strong>
+                        {{ speaker.first_name }} {{ speaker.last_name }}
+                    </strong><br>
+                    {{ speaker.professional_info['profession'] }} <br>
+                    {{ speaker.professional_info['empolyeer'] }}
+                </h6>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row center-text padding-bmt">
+        <div class="col">
+            <a href="/speakers">
+                <button type="button" class="btn btn-primary btn-lg" >SPEAKERS</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fuild blue-banner text-darker">
+    <div class="row">
+        <div class="col-md col-xs-12">
+            <p class="center-text">
+                March 17, 2018 <br>
+                Registration: 8:30am - 9:30am <br>
+                Talks: 9:30am - 5:00pm <br>
+            </p>
+        </div>
+        <div class="col-md col-xs-12">
+            <p class="center-text">
+                 <strong><a href="https://www.google.com/maps/place/Galvanize+-+San+Francisco+(SoMa)/@37.787613,-122.396638,15z/data=!4m2!3m1!1s0x0:0x3cfc91016a294580?sa=X&ved=0ahUKEwjbu9Hc3sfZAhVY3GMKHcIRBrIQ_BIItAEwCg">Galvanize</a></strong><br>
+                     44 Tehama St <br>
+                     San Francisco, CA 94105
+            </p>
+        </div>
+    </div>
+    <div class="card center-text center-block homepage-card">
+        <div class="card-block">
+            <p class="center-text card-text center-text">
+                <h3 class="center-text">
+                    Volunteering Opportunities
+                </h3>
+                <!-- <p class="center-text">
+                     Apply to be part of Day of Volunteer team!
+                     </p>
+                     <a href="/faq#reg-7">
+                     <button type="button" class="btn btn-primary green text-darker" >Day-of Volunteer</button>
+                     </a>
+                     <br> -->
+                <form class="padding-top " style="text-align:center;" action="https://tinyletter.com/IWD_SF" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/IWD_SF', 'popupwindow');return true"><p><label for="tlemail">Be part of our microphone team, spread the news about the event! <br>Enter your email address to join Microphone team:</label></p><input type="text" style="width:140px" name="email" id="tlemail" /><input type="hidden" value="1" name="embed"/><span></span><input class="btn btn-primary white text-darker" type="submit" value="Join the team!" /></form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

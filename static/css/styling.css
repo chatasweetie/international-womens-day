@@ -244,6 +244,10 @@ h1 {
   padding-bottom: 1%;
 }
 
+iframe {
+  height: -webkit-fill-available;
+  width: inherit;
+}
 
 /* Speaker CSS */
 .support-card{
