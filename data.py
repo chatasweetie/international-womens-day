@@ -114,7 +114,7 @@ laura.add_talk(
     title="New Realities of an Augmented Workforce",
     description="We are creating a new augmented workforce -  through increased connectivity and alternative realities thanks to AR and VR  magnified by the fourth wave of an industrial revolution led by digitization, big data, internet of things and cognification of everything. In this talk, we'll explore these exponential technological advances by answering the question - What are the new realities of this augmented workforce? We'll wrap up by empowering listeners with strategies they and their companies can implore for a cohesive and sustainable future.",
     track_name="Yellow Area",
-    time="12:00pm",
+    time="11:00am",
     date=date,
     category="Technology",
     )
@@ -819,7 +819,7 @@ vr = Talk(
         title="Breaking into Emerging Tech",
         description="Three women describe their paths to working in immersive computing at Google and answer your questions about career, professional development, and being female thought leaders in an emerging industry.",
         track_name="Yellow Area",
-        time="11:00am",
+        time="12:00pm",
         speaker=None,
         date=date,
         category="Professional",
