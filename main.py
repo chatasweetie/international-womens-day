@@ -27,7 +27,7 @@ def favicon():
 @app.route("/schedule.png")
 def schedule_img():
     return send_from_directory(os.path.join(app.root_path, "static", "imgs", "assests"),
-                               "speakers.jpg", mimetype="image/png")
+                               "speakers.png", mimetype="image/png")
 
 
 @app.route("/")
@@ -111,11 +111,19 @@ def faq():
 
     return render_template("faq.html")
 
+
 @app.route("/sponsors")
 def sponsors():
     """Sponsors Page"""
 
     return render_template("sponsors.html")
+
+
+@app.route("/2018")
+def photo_2018():
+    """Photos from March 17, 2018"""
+
+    return render_template("photos-2018.html")
 
 
 if __name__ == "__main__":
