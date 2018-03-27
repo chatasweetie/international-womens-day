@@ -123,7 +123,10 @@ def sponsors():
 def photo_2018():
     """Photos from March 17, 2018"""
 
-    return render_template("photos-2018.html")
+    _speakers_data = speakers_data[:17]
+
+    return render_template("photos-2018.html",
+                            speaker_data=_speakers_data)
 
 
 if __name__ == "__main__":

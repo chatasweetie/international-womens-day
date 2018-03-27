@@ -107,6 +107,7 @@ body {
   background-color: rgb(0, 191, 165);
   margin-top: 1%;
   padding: 1% 0 1% 0;
+  color: white;
 }
 
 .row {
@@ -180,7 +181,7 @@ h1 {
   color: #4927d8;
 }
 
-.fancy-font{
+.fancy-font-header{
   font-family: Satisfy;
   font-size: 30px;
   font-weight: normal;
@@ -194,6 +195,10 @@ h1 {
   color: #4927d8;
 }
 
+.fancy-font {
+  font-family: Satisfy;
+}
+
 .container-text {
   padding-left: 10%;
   padding-right: 10%;
@@ -202,7 +207,7 @@ h1 {
 .blue-banner{
   background: rgb(79,195,247);
   margin:0;
-  padding:1%;
+  padding: 1%;
   width: 100%;
 }
 
