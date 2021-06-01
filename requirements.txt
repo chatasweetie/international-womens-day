@@ -15,7 +15,7 @@ MarkupSafe==1.0
 Pygments==2.2.0
 requests==2.18.4
 six==1.11.0
-urllib3==1.22
+urllib3==1.26.5
 wcwidth==0.1.7
 Werkzeug==0.12.2
 wheel==0.24.0
